@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530C119C25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
+		530C119D25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
+		530C119E25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D6F25D083350048FDE3 /* AppDelegate.swift */; };
 		53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7125D083350048FDE3 /* SceneDelegate.swift */; };
 		53717D7425D083350048FDE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7325D083350048FDE3 /* ViewController.swift */; };
 		53717D7725D083350048FDE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53717D7525D083350048FDE3 /* Main.storyboard */; };
-		53717D7A25D083360048FDE3 /* Parking_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7825D083360048FDE3 /* Parking_Finder.xcdatamodeld */; };
 		53717D7C25D083370048FDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53717D7B25D083370048FDE3 /* Assets.xcassets */; };
 		53717D7F25D083370048FDE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53717D7D25D083370048FDE3 /* LaunchScreen.storyboard */; };
 		53717D8A25D083380048FDE3 /* Parking_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D8925D083380048FDE3 /* Parking_FinderTests.swift */; };
 		53717D9525D083380048FDE3 /* Parking_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D9425D083380048FDE3 /* Parking_FinderUITests.swift */; };
+		675B3ED9E6D139EE8E338529 /* Pods_Parking_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		53717D6C25D083350048FDE3 /* Parking Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53717D6F25D083350048FDE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53717D7125D083350048FDE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53717D7325D083350048FDE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53717D7625D083350048FDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		53717D7925D083360048FDE3 /* Parking_Finder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parking_Finder.xcdatamodel; sourceTree = "<group>"; };
 		53717D7B25D083370048FDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53717D7E25D083370048FDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53717D8025D083370048FDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		53717D9025D083380048FDE3 /* Parking FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parking FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53717D9425D083380048FDE3 /* Parking_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_FinderUITests.swift; sourceTree = "<group>"; };
 		53717D9625D083380048FDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D46454C86777563C1933A3A /* Pods-Parking Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder.release.xcconfig"; path = "Target Support Files/Pods-Parking Finder/Pods-Parking Finder.release.xcconfig"; sourceTree = "<group>"; };
+		603B408D958A944F69022EEB /* Pods-Parking Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder.debug.xcconfig"; path = "Target Support Files/Pods-Parking Finder/Pods-Parking Finder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675B3ED9E6D139EE8E338529 /* Pods_Parking_Finder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047C4E7244829DFBB3FBB54F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				603B408D958A944F69022EEB /* Pods-Parking Finder.debug.xcconfig */,
+				5D46454C86777563C1933A3A /* Pods-Parking Finder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E738A4B419FBF4971F0F964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53717D6325D083350048FDE3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				53717D8825D083380048FDE3 /* Parking FinderTests */,
 				53717D9325D083380048FDE3 /* Parking FinderUITests */,
 				53717D6D25D083350048FDE3 /* Products */,
+				047C4E7244829DFBB3FBB54F /* Pods */,
+				2E738A4B419FBF4971F0F964 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +134,8 @@
 				53717D7525D083350048FDE3 /* Main.storyboard */,
 				53717D7B25D083370048FDE3 /* Assets.xcassets */,
 				53717D7D25D083370048FDE3 /* LaunchScreen.storyboard */,
+				530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */,
 				53717D8025D083370048FDE3 /* Info.plist */,
-				53717D7825D083360048FDE3 /* Parking_Finder.xcdatamodeld */,
 			);
 			path = "Parking Finder";
 			sourceTree = "<group>";
@@ -138,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53717D9925D083380048FDE3 /* Build configuration list for PBXNativeTarget "Parking Finder" */;
 			buildPhases = (
+				CD911A25CC5343897E00B673 /* [CP] Check Pods Manifest.lock */,
 				53717D6825D083350048FDE3 /* Sources */,
 				53717D6925D083350048FDE3 /* Frameworks */,
 				53717D6A25D083350048FDE3 /* Resources */,
+				8035A0164412A4D18F11334F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53717D7F25D083370048FDE3 /* LaunchScreen.storyboard in Resources */,
+				530C119C25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */,
 				53717D7C25D083370048FDE3 /* Assets.xcassets in Resources */,
 				53717D7725D083350048FDE3 /* Main.storyboard in Resources */,
 			);
@@ -244,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530C119D25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +282,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530C119E25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8035A0164412A4D18F11334F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parking Finder/Pods-Parking Finder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parking Finder/Pods-Parking Finder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parking Finder/Pods-Parking Finder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD911A25CC5343897E00B673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parking Finder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53717D6825D083350048FDE3 /* Sources */ = {
@@ -263,7 +337,6 @@
 			files = (
 				53717D7425D083350048FDE3 /* ViewController.swift in Sources */,
 				53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */,
-				53717D7A25D083360048FDE3 /* Parking_Finder.xcdatamodeld in Sources */,
 				53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +510,7 @@
 		};
 		53717D9A25D083380048FDE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603B408D958A944F69022EEB /* Pods-Parking Finder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +529,7 @@
 		};
 		53717D9B25D083380048FDE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D46454C86777563C1933A3A /* Pods-Parking Finder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -591,19 +666,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		53717D7825D083360048FDE3 /* Parking_Finder.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				53717D7925D083360048FDE3 /* Parking_Finder.xcdatamodel */,
-			);
-			currentVersion = 53717D7925D083360048FDE3 /* Parking_Finder.xcdatamodel */;
-			path = Parking_Finder.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 53717D6425D083350048FDE3 /* Project object */;
 }
