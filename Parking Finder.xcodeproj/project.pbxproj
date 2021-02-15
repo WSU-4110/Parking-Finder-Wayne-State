@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		530C119C25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		530C119D25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		530C119E25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
+		531CEEF825DB29A1008CE498 /* createProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CEEF725DB29A1008CE498 /* createProfileViewController.swift */; };
+		531CEEFA25DB2EFE008CE498 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CEEF925DB2EFE008CE498 /* loginViewController.swift */; };
 		53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D6F25D083350048FDE3 /* AppDelegate.swift */; };
 		53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7125D083350048FDE3 /* SceneDelegate.swift */; };
 		53717D7425D083350048FDE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7325D083350048FDE3 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		531CEEF725DB29A1008CE498 /* createProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createProfileViewController.swift; sourceTree = "<group>"; };
+		531CEEF925DB2EFE008CE498 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		53717D6C25D083350048FDE3 /* Parking Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53717D6F25D083350048FDE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53717D7125D083350048FDE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +95,6 @@
 				603B408D958A944F69022EEB /* Pods-Parking Finder.debug.xcconfig */,
 				5D46454C86777563C1933A3A /* Pods-Parking Finder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +134,8 @@
 				53717D6F25D083350048FDE3 /* AppDelegate.swift */,
 				53717D7125D083350048FDE3 /* SceneDelegate.swift */,
 				53717D7325D083350048FDE3 /* ViewController.swift */,
+				531CEEF725DB29A1008CE498 /* createProfileViewController.swift */,
+				531CEEF925DB2EFE008CE498 /* loginViewController.swift */,
 				53717D7525D083350048FDE3 /* Main.storyboard */,
 				53717D7B25D083370048FDE3 /* Assets.xcassets */,
 				53717D7D25D083370048FDE3 /* LaunchScreen.storyboard */,
@@ -335,9 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531CEEF825DB29A1008CE498 /* createProfileViewController.swift in Sources */,
 				53717D7425D083350048FDE3 /* ViewController.swift in Sources */,
 				53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */,
 				53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */,
+				531CEEFA25DB2EFE008CE498 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

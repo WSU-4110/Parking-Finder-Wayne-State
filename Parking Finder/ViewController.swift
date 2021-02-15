@@ -7,13 +7,48 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class homeViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+}
+class accountViewController: UIViewController
+{
+
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+
+    @IBAction func didTapCreateProfileButton()
+    {
+        guard let vc = storyboard?.instantiateViewController(identifier: "createProfile_vc") as? createProfileViewController
+        else
+        {
+            return
+        }
+        present(vc, animated: true)
+    }
+    @IBAction func didTaploginProfileButton()
+    {
+        guard let vc = storyboard?.instantiateViewController(identifier: "loginProfile_vc") as? loginViewController
+        else
+        {
+            return
+        }
+        present(vc, animated: true)
+    }
+}
+class finderViewController: UIViewController
+{
+
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
 
 }
-
