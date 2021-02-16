@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
-options: "02e81aa123c93b9f8e5a55e5a2ac6587"
-build_time: [1613513940, 74631000]
-inputs:
-  "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking Finder/createProfileViewController.swift": !dirty [1613429042, 160672758]
-  "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking Finder/ViewController.swift": !dirty [1613430419, 741693671]
-  "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking Finder/AppDelegate.swift": !dirty [1613072202, 803647862]
-  "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking Finder/SceneDelegate.swift": !dirty [1612729269, 926338152]
-  "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking Finder/loginViewController.swift": !dirty [1613429040, 440944366]
