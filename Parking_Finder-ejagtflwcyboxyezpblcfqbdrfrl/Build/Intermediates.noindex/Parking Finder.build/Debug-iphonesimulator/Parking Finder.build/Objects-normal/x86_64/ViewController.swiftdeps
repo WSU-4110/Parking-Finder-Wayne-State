@@ -1,0 +1,308 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "homeViewController"
+- "accountViewController"
+- "finderViewController"
+provides-nominal:
+- "14Parking_Finder18homeViewControllerC"
+- "14Parking_Finder21accountViewControllerC"
+- "14Parking_Finder20finderViewControllerC"
+provides-member:
+- ["14Parking_Finder18homeViewControllerC", ""]
+- ["14Parking_Finder21accountViewControllerC", ""]
+- ["14Parking_Finder20finderViewControllerC", ""]
+provides-dynamic-lookup:
+- "didTapCreateProfileButton"
+- "didTaploginProfileButton"
+- "viewDidLoad"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "StringLiteralType"
+- "UIViewController"
+- "accountViewController"
+- "createProfileViewController"
+- "finderViewController"
+- "homeViewController"
+- "loginViewController"
+- !private "present"
+- !private "storyboard"
+depends-member:
+- ["SK", ""]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["Sl", ""]
+- ["SL", ""]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["SQ", ""]
+- !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "present"]
+- !private ["SQ", "storyboard"]
+- !private ["SQ", "viewDidLoad"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["SH", ""]
+- !private ["SH", "instantiateViewController"]
+- !private ["SH", "present"]
+- !private ["SH", "storyboard"]
+- !private ["SH", "viewDidLoad"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "createProfileViewController"]
+- ["So8NSCodingP", "didTapCreateProfileButton"]
+- ["So8NSCodingP", "didTaploginProfileButton"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "loginViewController"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "storyboard"]
+- ["So8NSCodingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "createProfileViewController"]
+- ["So26NSExtensionRequestHandlingP", "didTapCreateProfileButton"]
+- ["So26NSExtensionRequestHandlingP", "didTaploginProfileButton"]
+- ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "loginViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "createProfileViewController"]
+- ["So8NSObjectC", "didTapCreateProfileButton"]
+- ["So8NSObjectC", "didTaploginProfileButton"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "instantiateViewControllerWithIdentifier"]
+- !private ["So8NSObjectC", "loginViewController"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "presentViewController"]
+- !private ["So8NSObjectC", "storyboard"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "createProfileViewController"]
+- ["So8NSObjectP", "didTapCreateProfileButton"]
+- ["So8NSObjectP", "didTaploginProfileButton"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "instantiateViewControllerWithIdentifier"]
+- !private ["So8NSObjectP", "loginViewController"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "presentViewController"]
+- !private ["So8NSObjectP", "storyboard"]
+- ["So8NSObjectP", "viewDidLoad"]
+- ["ST", ""]
+- ["s16TextOutputStreamP", ""]
+- ["s20TextOutputStreamableP", ""]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "createProfileViewController"]
+- ["So21UIAppearanceContainerP", "didTapCreateProfileButton"]
+- ["So21UIAppearanceContainerP", "didTaploginProfileButton"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "loginViewController"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "createProfileViewController"]
+- ["So18UIContentContainerP", "didTapCreateProfileButton"]
+- ["So18UIContentContainerP", "didTaploginProfileButton"]
+- ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "loginViewController"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "createProfileViewController"]
+- ["So18UIFocusEnvironmentP", "didTapCreateProfileButton"]
+- ["So18UIFocusEnvironmentP", "didTaploginProfileButton"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "loginViewController"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "createProfileViewController"]
+- ["So30UIPasteConfigurationSupportingP", "didTapCreateProfileButton"]
+- ["So30UIPasteConfigurationSupportingP", "didTaploginProfileButton"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "loginViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "presentViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "createProfileViewController"]
+- ["So11UIResponderC", "didTapCreateProfileButton"]
+- ["So11UIResponderC", "didTaploginProfileButton"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "loginViewController"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "presentViewController"]
+- !private ["So11UIResponderC", "storyboard"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "createProfileViewController"]
+- ["So30UIResponderStandardEditActionsP", "didTapCreateProfileButton"]
+- ["So30UIResponderStandardEditActionsP", "didTaploginProfileButton"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "loginViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "presentViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "createProfileViewController"]
+- ["So16UIStateRestoringP", "didTapCreateProfileButton"]
+- ["So16UIStateRestoringP", "didTaploginProfileButton"]
+- ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "loginViewController"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "createProfileViewController"]
+- ["So18UITraitEnvironmentP", "didTapCreateProfileButton"]
+- ["So18UITraitEnvironmentP", "didTaploginProfileButton"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "loginViewController"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "createProfileViewController"]
+- ["So23UIUserActivityRestoringP", "didTapCreateProfileButton"]
+- ["So23UIUserActivityRestoringP", "didTaploginProfileButton"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "loginViewController"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "presentViewController"]
+- !private ["So23UIUserActivityRestoringP", "storyboard"]
+- ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "createProfileViewController"]
+- ["So16UIViewControllerC", "didTapCreateProfileButton"]
+- ["So16UIViewControllerC", "didTaploginProfileButton"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "loginViewController"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "storyboard"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- ["14Parking_Finder21accountViewControllerC", ""]
+- !private ["14Parking_Finder21accountViewControllerC", "createProfileViewController"]
+- ["14Parking_Finder21accountViewControllerC", "deinit"]
+- ["14Parking_Finder21accountViewControllerC", "didTapCreateProfileButton"]
+- ["14Parking_Finder21accountViewControllerC", "didTaploginProfileButton"]
+- ["14Parking_Finder21accountViewControllerC", "init"]
+- !private ["14Parking_Finder21accountViewControllerC", "loginViewController"]
+- !private ["14Parking_Finder21accountViewControllerC", "present"]
+- !private ["14Parking_Finder21accountViewControllerC", "storyboard"]
+- ["14Parking_Finder21accountViewControllerC", "viewDidLoad"]
+- ["14Parking_Finder20finderViewControllerC", ""]
+- ["14Parking_Finder20finderViewControllerC", "deinit"]
+- ["14Parking_Finder20finderViewControllerC", "init"]
+- ["14Parking_Finder20finderViewControllerC", "viewDidLoad"]
+- ["14Parking_Finder18homeViewControllerC", ""]
+- ["14Parking_Finder18homeViewControllerC", "deinit"]
+- ["14Parking_Finder18homeViewControllerC", "init"]
+- ["14Parking_Finder18homeViewControllerC", "viewDidLoad"]
+depends-nominal:
+- "SK"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "ST"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "14Parking_Finder21accountViewControllerC"
+- "14Parking_Finder20finderViewControllerC"
+- "14Parking_Finder18homeViewControllerC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "558853aa29d158b438826d8ff412f89b"
