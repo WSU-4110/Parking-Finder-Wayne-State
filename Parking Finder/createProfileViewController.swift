@@ -20,7 +20,7 @@ class createProfileViewController: UIViewController
     // information, passing the user's form inputs in the argument
     //  
 
-    func addToDatabase(string firstName, string lastName, string userEmail, string userName, bool isOnline, string password)
+    func addToDatabase(String firstName, String lastName, String userEmail, String userName, String password)
     {
         let ref = Database.database().reference()
         ref.child("users").childByAutoId().setValue([
@@ -28,7 +28,7 @@ class createProfileViewController: UIViewController
             "lastName": lastName,
             "userEmail": userEmail,
             "userName": userName,
-            "isOnline", isOnline,
+            "isOnline", true,
             "password", password
         ])
     }
