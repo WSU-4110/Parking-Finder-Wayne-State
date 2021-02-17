@@ -16,8 +16,8 @@ class createProfileViewController: UIViewController
         super.viewDidLoad()
     }
 
-    // (Trevor) I think this is done in this class? This function will be called by Fahim to update the database when the user submits their new profile 
-    // information, passing their 
+    // (Trevor) I think this is done in this class? The addToDatabase function will be called by Fahim to update the database when the user submits their new profile 
+    // information, passing the user's form inputs in the argument
     //  
 
     func addToDatabase(string firstName, string lastName, string userEmail, string userName, bool isOnline, string password)
