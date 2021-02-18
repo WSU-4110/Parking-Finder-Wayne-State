@@ -49,8 +49,8 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
       
         let userObject: [String: Any] =
         [
-            "password":"userPasswordField",         // make userPasswordField and userNameField Functional
-            "username":"userNameField"
+            "password":userPasswordField!.text,
+            "username":userNameField!.text
         ]
         database.child("Users").childByAutoId().setValue(userObject)
     }
