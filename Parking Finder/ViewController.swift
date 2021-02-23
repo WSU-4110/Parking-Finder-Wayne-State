@@ -36,7 +36,8 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     
     // Fahim write code to naviagate user to create profile View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
     
-    
+    override func viewDidAppear(_ animated: Bool) { self.performSegueWithIdentifier("createView", sender: self);
+       }
     
     
     
