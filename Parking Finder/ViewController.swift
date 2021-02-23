@@ -15,6 +15,10 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     @IBOutlet weak var userParkedZoneField: UITextField!
     @IBOutlet weak var userParkedETimeField: UITextField!
     
+    // Label that is red and will be green when user online
+    @IBOutlet weak var notifyUserOnline: UILabel!
+    
+   
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -22,8 +26,19 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         userParkedZoneField.delegate = self
         userParkedETimeField.delegate = self
         
+        // code make i change colors - notifyUserOnline.textColor = UIColor.blue
     }
-
+    // Eli write code to naviagate user to login View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
+    
+    
+    
+    
+    // Fahim write code to naviagate user to create profile View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
+    
+    
+    
+    
+    
     // Action to send user parked data to database where user is
     @IBAction func parkedButton(_ sender: Any) {
         let createProfileObject: [String: Any] =
