@@ -12,20 +12,23 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
 {
     private let database = Database.database().reference()
     
+    // Outlets
+    @IBOutlet weak var userEmailField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var userPasswordField: UITextField!
-  
+    
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        userEmailField.delegate = self
         userNameField.delegate = self
         userPasswordField.delegate = self
         
+
         
-        
-        /*database.child("Users").observeSingleEvent(of: .value, with: {snapshot in
+        database.child("Users").observeSingleEvent(of: .value, with: {snapshot in
         guard let value = snapshot.value as? [String: Any]
         else
         {
@@ -33,26 +36,21 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         }
             print("Value: \(value)")
         })
-         
         
-        let createUserButton = UIButton(frame: CGRect(x: 20, y: 400, width: view.frame.size.width-40, height:50))
-        createUserButton.setTitle("Create Profile", for: .normal)
-        createUserButton.setTitleColor(.white, for: .normal)
-        createUserButton.backgroundColor = .link
-        view.addSubview(createUserButton)
-        createUserButton.addTarget(self, action: #selector(addNewUser), for:.touchUpInside)*/
         
     }
-        
+    
+    // Action to send user create profile data to database
     @IBAction func createTapped(_ sender: Any)
     {
       
-        let userObject: [String: Any] =
+        let createProfileObject: [String: Any] =
         [
-            "password":userPasswordField!.text,
-            "username":userNameField!.text
+            "email":userEmailField.text!,
+            "username":userNameField.text!,
+            "password":userPasswordField.text!
         ]
-        database.child("Users").childByAutoId().setValue(userObject)
+        database.child("Users").childByAutoId().setValue(createProfileObject)
     }
 
     // (Trevor) I think this is done in this class? The addToDatabase function will be called by Fahim to update the database when the user submits their new profile 
@@ -60,28 +58,21 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
     //
 
 
-  /*  @objc private func addNewUser()
+    //keyboard methods for fields
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
-        let userObject: [String: Any] =
-        [
-            "password":"" as NSObject,
-            "username":""
-        ]
-        database.child("Users").childByAutoId().setValue(userObject)
-    }*/
-
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
-    {
-      
-        userPasswordField.resignFirstResponder()
-    }
-}
-/*extension createProfileViewController : UITextFieldDelegate
-{
-    func textFieldShouldReturn(_ textField: UITextField) ->Bool
-    {
-        textField.resignFirstResponder()
+        hidekeyboardProfile()
         return true
     }
-}*/
+    func hidekeyboardProfile()
+    {
+        print("Hide Keyboard")
+        userEmailField.resignFirstResponder()
+        userNameField.resignFirstResponder()
+        userPasswordField.resignFirstResponder()
+    }
+    
+    
+    
+
+}
