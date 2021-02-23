@@ -55,12 +55,10 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         database.child("Users").childByAutoId().setValue(userObject)
     }
 
-    // (Trevor) I think this is done in this class? The addToDatabase function will be called by Fahim to update the database when the user submits their new profile 
-    // information, passing the user's form inputs in the argument
-    //
+   
 
 
-  /*  @objc private func addNewUser()
+ @objc private func addNewUser()
     {
         let userObject: [String: Any] =
         [
@@ -68,7 +66,7 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
             "username":""
         ]
         database.child("Users").childByAutoId().setValue(userObject)
-    }*/
+    }
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -77,11 +75,11 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         userPasswordField.resignFirstResponder()
     }
 }
-/*extension createProfileViewController : UITextFieldDelegate
+extension createProfileViewController : UITextFieldDelegate
 {
     func textFieldShouldReturn(_ textField: UITextField) ->Bool
     {
         textField.resignFirstResponder()
         return true
     }
-}*/
+}
