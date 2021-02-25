@@ -47,7 +47,15 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
             "parkingET":userParkedETimeField.text!
         ]
         database.child("Users").childByAutoId().setValue(createProfileObject)
+        
+        // Parked Button is hidden when tapped
+        let tapButton : UIButton = sender as! UIButton
+            tapButton.isHidden = true;
     }
+    
+    
+    
+    
     
     // Func Handle textfields Home Page
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
@@ -66,13 +74,15 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     }
 
     
+    
+    
+    
     //keyboard methods for fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         hidekeyboardHome()
         return true
     }
-    
     // Func hideKeyboard
     func hidekeyboardHome()
     {

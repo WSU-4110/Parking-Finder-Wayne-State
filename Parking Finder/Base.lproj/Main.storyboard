@@ -81,7 +81,7 @@
         <!--Home-->
         <scene sceneID="lpl-vN-PDo">
             <objects>
-                <viewController id="yeM-OQ-Ie4" customClass="homeViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home_vc" id="yeM-OQ-Ie4" customClass="homeViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUx-ag-JLB" userLabel="mainView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +98,7 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type parking zone..." minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Hdj-r7-ygu">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type parking zone..." clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Hdj-r7-ygu">
                                                 <rect key="frame" x="0.0" y="42.5" width="262.5" height="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -114,7 +114,7 @@
                                                 <rect key="frame" x="0.0" y="141" width="262.5" height="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gl-es-GlR">
                                                 <rect key="frame" x="0.0" y="197" width="262.5" height="30"/>
@@ -235,7 +235,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="createTapped:" destination="cQH-21-WKe" eventType="touchUpInside" id="ePf-5w-kyx"/>
+                                                    <action selector="createUserButton:" destination="cQH-21-WKe" eventType="touchUpInside" id="ZcG-ul-3Ug"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -323,6 +323,9 @@
                                                 <state key="normal" title="Log-in">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginButton:" destination="NRo-ub-lh1" eventType="touchUpInside" id="P0v-lM-co2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -353,6 +356,10 @@
                             <constraint firstItem="v6t-m2-ftK" firstAttribute="top" secondItem="e3m-Fm-S7I" secondAttribute="top" id="cwB-oc-sk4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameLoginField" destination="OAw-m3-UJD" id="caV-tX-16H"/>
+                        <outlet property="userPasswordLoginField" destination="a45-Ot-SGL" id="fzE-T4-84f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4E-rG-s2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
