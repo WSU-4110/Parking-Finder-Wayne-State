@@ -55,15 +55,18 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
             let ref = Database.database().reference()
             
             let usersReference = ref.child("users")
-           // print(usersReference.description()) // print out database
+            //print(usersReference.description()) // print out database
             let uid = user!.user.uid                              // new firebase user object
             let newUserReference = usersReference.child(uid)        // new reference points to the new user object on firebase
             newUserReference.setValue([                         // get user information
                 "email":self.userEmailField.text!,
                 "username":self.userNameField.text!,
-                "password":self.userPasswordField.text!
+                "password":self.userPasswordField.text!,
+                "parking Zone":"",
+                "parking time":""
             ])
             print("description\(newUserReference.description())")   // absolute path for location of the user
+            self.performSegue(withIdentifier: "createToTabBarVC", sender: nil)      // go to home VC if user successfully created an account
         }
     }
     

@@ -83,11 +83,11 @@
             <objects>
                 <viewController storyboardIdentifier="home_vc" id="yeM-OQ-Ie4" customClass="homeViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUx-ag-JLB" userLabel="mainView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0a-Qf-uSB">
-                                <rect key="frame" x="20" y="88" width="374" height="725"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="clx-qj-ss3">
                                         <rect key="frame" x="56" y="199" width="262.5" height="227"/>
@@ -103,6 +103,9 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <action selector="parkingzone:" destination="xct-qA-ekL" eventType="editingDidEnd" id="E0c-eg-EUw"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Parking Time (hr) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-Ii-0Dp">
                                                 <rect key="frame" x="0.0" y="98.5" width="262.5" height="20.5"/>
@@ -133,18 +136,10 @@
                                             <constraint firstAttribute="width" constant="262.5" id="X4A-bJ-SmT"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7X-Zl-bMw">
-                                        <rect key="frame" x="354.5" y="7.5" width="5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="V7X-Zl-bMw" firstAttribute="centerX" secondItem="Y0a-Qf-uSB" secondAttribute="centerX" constant="170" id="4p3-gq-t84"/>
                                     <constraint firstAttribute="height" constant="725" id="I5z-Yg-c90"/>
-                                    <constraint firstItem="V7X-Zl-bMw" firstAttribute="centerY" secondItem="Y0a-Qf-uSB" secondAttribute="centerY" constant="-345" id="Ld3-or-FR7"/>
                                     <constraint firstAttribute="width" constant="374" id="Nho-uP-Zss"/>
                                     <constraint firstItem="clx-qj-ss3" firstAttribute="centerX" secondItem="Y0a-Qf-uSB" secondAttribute="centerX" id="ghC-VX-eZD"/>
                                     <constraint firstItem="clx-qj-ss3" firstAttribute="centerY" secondItem="Y0a-Qf-uSB" secondAttribute="centerY" constant="-50" id="iuB-n4-cj5"/>
@@ -160,12 +155,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="YSK-uH-J5O"/>
                     <connections>
-                        <outlet property="notifyUserOnline" destination="V7X-Zl-bMw" id="66U-Er-0YK"/>
                         <outlet property="userParkedETimeField" destination="rph-XZ-lXr" id="CZ1-jY-whq"/>
                         <outlet property="userParkedZoneField" destination="Hdj-r7-ygu" id="AG2-6K-1l3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4i8-zB-Ib4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xct-qA-ekL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2988.4057971014495" y="1283.7053571428571"/>
         </scene>
@@ -269,11 +264,12 @@
                         <outlet property="userEmailField" destination="6yd-B2-fih" id="0qO-jr-cWr"/>
                         <outlet property="userNameField" destination="2Hn-br-BI6" id="vzA-dR-31a"/>
                         <outlet property="userPasswordField" destination="m7Y-LV-a0X" id="gRd-Wn-T3q"/>
+                        <segue destination="yeM-OQ-Ie4" kind="presentation" identifier="createToTabBarVC" id="UmU-0Q-QtY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2a9-Vm-cfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2410.144927536232" y="2013.6160714285713"/>
+            <point key="canvasLocation" x="-4158" y="1292"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="NQs-a8-5Tx">
@@ -357,13 +353,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="mcS-Vd-WFt" id="KDk-ch-bLy"/>
                         <outlet property="userNameLoginField" destination="OAw-m3-UJD" id="caV-tX-16H"/>
                         <outlet property="userPasswordLoginField" destination="a45-Ot-SGL" id="fzE-T4-84f"/>
+                        <segue destination="yeM-OQ-Ie4" kind="presentation" identifier="loginToTabBarVC" id="7G1-iG-eXu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4E-rG-s2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1778.2608695652175" y="2013.6160714285713"/>
+            <point key="canvasLocation" x="-4100" y="1978"/>
         </scene>
         <!--Account-->
         <scene sceneID="6Ow-di-Xml">
@@ -469,6 +467,9 @@
             <point key="canvasLocation" x="-1194.2028985507247" y="1283.7053571428571"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7G1-iG-eXu"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -478,9 +479,6 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

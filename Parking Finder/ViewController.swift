@@ -7,9 +7,11 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
-class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate{
-    private let database = Database.database().reference()
+class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
+{
+
     
     // Outlets for text fields and button
     @IBOutlet weak var userParkedZoneField: UITextField!
@@ -40,18 +42,29 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     
     
     // Action to send user parked data to database where user is
-    @IBAction func parkedButton(_ sender: Any) {
-        let createProfileObject: [String: Any] =
-        [
-            "parkingZone":userParkedZoneField.text!,
-            "parkingET":userParkedETimeField.text!
-        ]
-        database.child("Users").childByAutoId().setValue(createProfileObject)
-        
+  /*  @IBAction func parkedButton(_ sender: Any)
+    {
+      
+            
+            let ref = Database.database().reference()
+            
+            let usersReference = ref.child("users")
+           // print(usersReference.description()) // print out database
+            let uid = user!.user.uid                              // new firebase user object
+            let newUserReference = usersReference.child(uid)        // new reference points to the new user object on firebase
+            newUserReference.setValue([                         // get user information
+                "email":self.userEmailField.text!,
+                "username":self.userNameField.text!,
+                "password":self.userPasswordField.text!,
+                "parking Zone":"",
+                "parking time":""
+            ])
+            print("description\(newUserReference.description())")   // absolute path for location of the user
+        }
         // Parked Button is hidden when tapped
         let tapButton : UIButton = sender as! UIButton
             tapButton.isHidden = true;
-    }
+    }*/
     
     
     

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
@@ -15,6 +16,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     @IBOutlet weak var userNameLoginField: UITextField!
     @IBOutlet weak var userPasswordLoginField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad()
     {
@@ -27,12 +29,20 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     @IBAction func loginButton(_ sender: Any)
     {
         
+        Auth.auth().signIn(withEmail: userNameLoginField.text!, password: userPasswordLoginField.text!) { (user: AuthDataResult?, error: Error?) in
+            if error != nil
+            {
+                print(error!.localizedDescription)
+                return
+            }
+            print(user?.user.email)                                                  // print console user's email
+            self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)       // user successfully login in with email and password go to home VC
+        }
         
         
         
         
-        
-        // once tapped naviagate to home page-----------------------------------------------------
+        /* once tapped naviagate to home page-----------------------------------------------------
         guard let vc = storyboard?.instantiateViewController(identifier: "home_vc") as? homeViewController
         else
         {
@@ -45,7 +55,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         // Login Profile Button is hidden when tapped--------------------------------------------
         let tapButton : UIButton = sender as! UIButton
             tapButton.isHidden = true;
-        // ----------------------------------------------------------------------------------------
+        */
     }
     
     
