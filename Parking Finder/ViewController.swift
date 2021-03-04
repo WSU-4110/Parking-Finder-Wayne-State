@@ -7,9 +7,11 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
-class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate{
-    private let database = Database.database().reference()
+class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
+{
+
     
     // Outlets for text fields and button
     @IBOutlet weak var userParkedZoneField: UITextField!
@@ -18,7 +20,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     // Label that is red and will be green when user online
     @IBOutlet weak var notifyUserOnline: UILabel!
     
-   
+   8
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -29,9 +31,23 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         // code make i change colors - notifyUserOnline.textColor = UIColor.blue
     }
     // Eli write code to naviagate user to login View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
-    override func viewDidAppear(_ animated: Bool) { self.performSegueWithIdentifier("loginView", sender: self);
+
+    @IBAction func logout_TouchUpInside(sender: Any) {
+        print(FIRAuth.auth()?.currentUser)
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let LogoutError {
+            print(LogoutError)
+        }
+        print(FIRAuth.auth()?.currentUser)
+        let storyboard = UIStoryboard(name: "Start", bundle: nil)
+        let signInVC = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+        self.present(signInVC, animated: True, completion: nil)
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) { self.performSegueWithIdentifier("loginView", sender: self);
+    }
     
     
     // Fahim write code to naviagate user to create profile View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
@@ -42,14 +58,33 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     
     
     // Action to send user parked data to database where user is
-    @IBAction func parkedButton(_ sender: Any) {
-        let createProfileObject: [String: Any] =
-        [
-            "parkingZone":userParkedZoneField.text!,
-            "parkingET":userParkedETimeField.text!
-        ]
-        database.child("Users").childByAutoId().setValue(createProfileObject)
-    }
+  /*  @IBAction func parkedButton(_ sender: Any)
+    {
+      
+            
+            let ref = Database.database().reference()
+            
+            let usersReference = ref.child("users")
+           // print(usersReference.description()) // print out database
+            let uid = user!.user.uid                              // new firebase user object
+            let newUserReference = usersReference.child(uid)        // new reference points to the new user object on firebase
+            newUserReference.setValue([                         // get user information
+                "email":self.userEmailField.text!,
+                "username":self.userNameField.text!,
+                "password":self.userPasswordField.text!,
+                "parking Zone":"",
+                "parking time":""
+            ])
+            print("description\(newUserReference.description())")   // absolute path for location of the user
+        }
+        // Parked Button is hidden when tapped
+        let tapButton : UIButton = sender as! UIButton
+            tapButton.isHidden = true;
+    }*/
+    
+    
+    
+    
     
     // Func Handle textfields Home Page
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
@@ -68,13 +103,15 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     }
 
     
+    
+    
+    
     //keyboard methods for fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         hidekeyboardHome()
         return true
     }
-    
     // Func hideKeyboard
     func hidekeyboardHome()
     {
