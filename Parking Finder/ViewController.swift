@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import MapKit
 
 class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
@@ -17,10 +18,9 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     @IBOutlet weak var userParkedZoneField: UITextField!
     @IBOutlet weak var userParkedETimeField: UITextField!
     
-    // Label that is red and will be green when user online
-    @IBOutlet weak var notifyUserOnline: UILabel!
+    // outlet for home view
+    @IBOutlet weak var homeView: UIView!
     
-   
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -39,7 +39,14 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     
     
     
+    @IBAction func homeButton(_ sender: Any)
+    {
+        
+        
+
+    }
     
+
     
     // Action to send user parked data to database where user is
   /*  @IBAction func parkedButton(_ sender: Any)
@@ -67,7 +74,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     }*/
     
     
-    
+
     
     
     // Func Handle textfields Home Page
@@ -106,39 +113,69 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
 
     
 }
-class accountViewController: UIViewController
-{
-
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-    }
-
-    @IBAction func didTapCreateProfileButton()
-    {
-        guard let vc = storyboard?.instantiateViewController(identifier: "createProfile_vc") as? createProfileViewController
-        else
-        {
-            return
-        }
-        present(vc, animated: true)
-    }
-    @IBAction func didTaploginProfileButton()
-    {
-        guard let vc = storyboard?.instantiateViewController(identifier: "loginProfile_vc") as? loginViewController
-        else
-        {
-            return
-        }
-        present(vc, animated: true)
-    }
-}
 class finderViewController: UIViewController
 {
 
+    @IBOutlet weak var mapView: MKMapView!
+
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+  
+        fetchStadiumsOnMap(wayneParkingZones)
+        zoomLevel(location: locationLatLong)
     }
+    
+
+    let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)
+    let distanceSpan: CLLocationDistance = 2500
+    
+    func zoomLevel(location: CLLocation)
+    {
+        let mapCoordinates = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: distanceSpan, longitudinalMeters: distanceSpan)
+        mapView.setRegion(mapCoordinates, animated: true)
+    }
+
+    struct ParkingZone
+    {
+        var name: String
+        var lattitude: CLLocationDegrees
+        var longtitude: CLLocationDegrees
+    }
+    
+    let wayneParkingZones = [ParkingZone(name: "\"202\"", lattitude: 42.35722, longtitude: -83.06361111),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35689, longtitude: -83.06472222),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35670, longtitude: -83.06530),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35635, longtitude: -83.06611111),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35605, longtitude: -83.06694444),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35577, longtitude: -83.06777778),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35559, longtitude: -83.06833333),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35525, longtitude: -83.06944444),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35500, longtitude: -83.06972222)
+    
+    
+    
+    ]
+    
+    
+    func fetchStadiumsOnMap(_ wayneParkingZones: [ParkingZone])
+    {
+        for ParkingZone in wayneParkingZones
+        {
+            let annotations = MKPointAnnotation()
+            annotations.title = ParkingZone.name
+            annotations.coordinate = CLLocationCoordinate2D(latitude: ParkingZone.lattitude, longitude: ParkingZone.longtitude)
+            mapView.addAnnotation(annotations)
+            
+        }
+    }
+    
+    
+    
+
+
+
 
 }

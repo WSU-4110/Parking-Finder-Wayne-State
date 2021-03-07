@@ -16,7 +16,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     @IBOutlet weak var userNameLoginField: UITextField!
     @IBOutlet weak var userPasswordLoginField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    
     
     override func viewDidLoad()
     {
@@ -35,7 +35,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
                 print(error!.localizedDescription)
                 return
             }
-            print(user?.user.email)                                                  // print console user's email
+            print(user?.user.email! as Any)                                                  // print console user's email
             self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)       // user successfully login in with email and password go to home VC
         }
         
@@ -61,6 +61,11 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     
     
+    @IBAction func noAccountButton(_ sender: Any)
+    {
+        
+        
+    }
     
     
     
