@@ -117,27 +117,38 @@ class finderViewController: UIViewController
 {
 
     @IBOutlet weak var mapView: MKMapView!
-
-    let locationManager = CLLocationManager()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
   
-        fetchStadiumsOnMap(wayneParkingZones)
-        zoomLevel(location: locationLatLong)
+        getParkzonesOnMap(wayneParkingZones)
+        setZoomLevel(location: locationLatLong)
     }
     
-
-    let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)
-    let distanceSpan: CLLocationDistance = 2500
     
-    func zoomLevel(location: CLLocation)
+    
+    
+    
+    // initial start coordinates
+    let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)
+    
+    // initial start radius distance
+    let distanceSpan: CLLocationDistance = 1500
+    
+    // create region for zoom level
+    func setZoomLevel(location: CLLocation)
     {
         let mapCoordinates = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: distanceSpan, longitudinalMeters: distanceSpan)
         mapView.setRegion(mapCoordinates, animated: true)
     }
 
+    
+    
+    
+    
+    
+    // structure for annotation pins
     struct ParkingZone
     {
         var name: String
@@ -145,6 +156,7 @@ class finderViewController: UIViewController
         var longtitude: CLLocationDegrees
     }
     
+    // set each pin coordinate and name
     let wayneParkingZones = [ParkingZone(name: "\"202\"", lattitude: 42.35722, longtitude: -83.06361111),
                              ParkingZone(name: "\"206\"", lattitude: 42.35689, longtitude: -83.06472222),
                              ParkingZone(name: "\"206\"", lattitude: 42.35670, longtitude: -83.06530),
@@ -153,14 +165,18 @@ class finderViewController: UIViewController
                              ParkingZone(name: "\"206\"", lattitude: 42.35577, longtitude: -83.06777778),
                              ParkingZone(name: "\"206\"", lattitude: 42.35559, longtitude: -83.06833333),
                              ParkingZone(name: "\"206\"", lattitude: 42.35525, longtitude: -83.06944444),
-                             ParkingZone(name: "\"206\"", lattitude: 42.35500, longtitude: -83.06972222)
-    
-    
-    
+                             ParkingZone(name: "\"206\"", lattitude: 42.35515, longtitude: -83.06972222),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35490, longtitude: -83.07055556),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35455, longtitude: -83.07166667),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778),
+                             
+                             ParkingZone(name: "\"206\"", lattitude: 42.35445, longtitude: -83.06580),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35390, longtitude: -83.06555556),
+                             ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778)
     ]
     
-    
-    func fetchStadiumsOnMap(_ wayneParkingZones: [ParkingZone])
+    // add each annotation parking zone with its info
+    func getParkzonesOnMap(_ wayneParkingZones: [ParkingZone])
     {
         for ParkingZone in wayneParkingZones
         {
@@ -173,9 +189,5 @@ class finderViewController: UIViewController
     }
     
     
-    
-
-
-
 
 }

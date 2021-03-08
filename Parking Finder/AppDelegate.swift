@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     didFinishLaunchingWithOptions launchOptions:
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool{
     
+    
+
     FirebaseApp.configure()
     
     return true
