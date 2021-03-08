@@ -17,9 +17,10 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     // Outlets for text fields and button
     @IBOutlet weak var userParkedZoneField: UITextField!
     @IBOutlet weak var userParkedETimeField: UITextField!
+    @IBOutlet weak var homeButton: UIButton!
     
-    // outlet for home view
-    @IBOutlet weak var homeView: UIView!
+    
+
     
     override func viewDidLoad()
     {
@@ -28,6 +29,13 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         userParkedZoneField.delegate = self
         userParkedETimeField.delegate = self
         
+        
+        
+        // shadow for park button
+        homeButton.layer.shadowColor = UIColor.black.cgColor
+        homeButton.layer.shadowOffset = CGSize(width: 2, height: 3)
+        homeButton.layer.shadowRadius = 1.0
+        homeButton.layer.shadowOpacity = 1.5
         // code make i change colors - notifyUserOnline.textColor = UIColor.blue
     }
     // Eli write code to naviagate user to login View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
@@ -124,6 +132,7 @@ class finderViewController: UIViewController
   
         getParkzonesOnMap(wayneParkingZones)
         setZoomLevel(location: locationLatLong)
+        
     }
     
     

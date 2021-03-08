@@ -12,7 +12,9 @@
         <scene sceneID="tOW-oY-75K">
             <objects>
                 <navigationController id="5d3-xM-fZ6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="HOME" id="yDP-XM-JpU"/>
+                    <tabBarItem key="tabBarItem" title="HOME" image="icons8-home-30" id="yDP-XM-JpU">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MvQ-82-aX4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +31,9 @@
         <scene sceneID="g6W-go-bxk">
             <objects>
                 <navigationController id="cuO-u7-NTf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FINDER" id="VX8-a4-sf7"/>
+                    <tabBarItem key="tabBarItem" title="FINDER" image="icons8-parking-30" id="VX8-a4-sf7">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="rpO-NE-CrD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qhw-Kb-2kL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -105,10 +109,11 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gl-es-GlR">
                                                 <rect key="frame" x="0.0" y="175" width="300" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="PARKED">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="homeButton:" destination="yeM-OQ-Ie4" eventType="touchUpInside" id="4l1-1t-nz4"/>
@@ -142,7 +147,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="YSK-uH-J5O"/>
                     <connections>
-                        <outlet property="homeView" destination="Y0a-Qf-uSB" id="iyN-ne-OBM"/>
+                        <outlet property="homeButton" destination="9Gl-es-GlR" id="4Wt-v8-DZD"/>
                         <outlet property="userParkedETimeField" destination="rph-XZ-lXr" id="CZ1-jY-whq"/>
                         <outlet property="userParkedZoneField" destination="Hdj-r7-ygu" id="AG2-6K-1l3"/>
                     </connections>
@@ -218,6 +223,7 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="SIGN-UP">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="createUserButton:" destination="cQH-21-WKe" eventType="touchUpInside" id="ZcG-ul-3Ug"/>
@@ -258,6 +264,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sSo-eC-DUZ"/>
                     <connections>
+                        <outlet property="createUserButton" destination="N1g-kG-5n2" id="UbV-0U-vLU"/>
                         <outlet property="userEmailField" destination="6yd-B2-fih" id="0qO-jr-cWr"/>
                         <outlet property="userNameField" destination="2Hn-br-BI6" id="vzA-dR-31a"/>
                         <outlet property="userPasswordField" destination="m7Y-LV-a0X" id="gRd-Wn-T3q"/>
@@ -372,6 +379,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="mcS-Vd-WFt" id="3Cy-85-pc0"/>
                         <outlet property="userNameLoginField" destination="OAw-m3-UJD" id="7Hx-UF-PpD"/>
                         <outlet property="userPasswordLoginField" destination="a45-Ot-SGL" id="B8n-aE-UpP"/>
                     </connections>
@@ -423,13 +431,19 @@
     <inferredMetricsTieBreakers>
         <segue reference="Ayx-rD-1Nm"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="icons8-home-30" width="30" height="30"/>
+        <image name="icons8-parking-30" width="30" height="30"/>
         <image name="wsu_warriorw_color_band" width="2168" height="1379"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

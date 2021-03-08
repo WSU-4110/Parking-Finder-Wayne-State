@@ -16,6 +16,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     @IBOutlet weak var userNameLoginField: UITextField!
     @IBOutlet weak var userPasswordLoginField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     
     override func viewDidLoad()
@@ -23,7 +24,12 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         super.viewDidLoad()
         userNameLoginField.delegate = self
         userPasswordLoginField.delegate = self
-
+        
+        // shadow for login button
+        loginButton.layer.shadowColor = UIColor.black.cgColor
+        loginButton.layer.shadowOffset = CGSize(width: 2, height: 3)
+        loginButton.layer.shadowRadius = 1.0
+        loginButton.layer.shadowOpacity = 1.5
     }
 
     @IBAction func loginButton(_ sender: Any)

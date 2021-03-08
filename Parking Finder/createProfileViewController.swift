@@ -16,6 +16,7 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
     @IBOutlet weak var userEmailField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var userPasswordField: UITextField!
+    @IBOutlet weak var createUserButton: UIButton!
     
 
 
@@ -27,7 +28,12 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         userNameField.delegate = self
         userPasswordField.delegate = self
         
-
+        // shadow for create account button
+        createUserButton.layer.shadowColor = UIColor.black.cgColor
+        createUserButton.layer.shadowOffset = CGSize(width: 2, height: 3)
+        createUserButton.layer.shadowRadius = 1.0
+        createUserButton.layer.shadowOpacity = 1.5
+        
       /*
         database.child("Users").observeSingleEvent(of: .value, with: {snapshot in
         guard let value = snapshot.value as? [String: Any]
