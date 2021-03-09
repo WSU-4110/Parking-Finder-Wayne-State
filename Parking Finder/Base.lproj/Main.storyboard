@@ -117,6 +117,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="homeButton:" destination="yeM-OQ-Ie4" eventType="touchUpInside" id="4l1-1t-nz4"/>
+                                                    <action selector="parkedButtonTapped:" destination="yeM-OQ-Ie4" eventType="touchUpInside" id="4MG-ZL-p9O"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -429,7 +430,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ayx-rD-1Nm"/>
+        <segue reference="ckY-iQ-OJb"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
