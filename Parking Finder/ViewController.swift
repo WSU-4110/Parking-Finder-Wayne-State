@@ -58,57 +58,6 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     }
     
 
-    
-    // Action to send user parked data to database where user is
-    /*@IBAction func parkedButton(_ sender: Any)
-    {
-      
-        /*
-            let ref = Database.database().reference()
-            
-            let usersReference = ref.child("users")
-            print(usersReference.description()) // print out database
-            let uid = user!.user.uid                              // new firebase user object
-            //let newUserReference = usersReference.child(uid)        // new reference points to the new user object on firebase
-            //newUserReference.setValue([                         // get user information
-              //  "email":self.userEmailField.text!,
-               // "username":self.userNameField.text!,
-               // "password":self.userPasswordField.text!,
-               // "parking Zone":"",
-               // "parking time":""
-            //])
-            //print("description\(newUserReference.description())")   // absolute path for location of the user
-        }
-        // Parked Button is hidden when tapped
-        let tapButton : UIButton = sender as! UIButton
-            tapButton.isHidden = true;
-    */
-    
-        //Trevor
-        let ref = Database.database().reference()
-        let usersReference = ref.child("users")
-        
-        //let userRef = Database.database().reference().child("users").child(Auth.auth().currentUser!.uid)
-        
-        let userRef = usersReference.child(Auth.auth().currentUser!.uid)
-        
-        
-        let uid :String = (Auth.auth().currentUser?.uid)!
-        print("Current user ID is" + uid)
-        userRef.updateChildValues([
-            "parking Zone": self.userParkedZoneField.text!,
-            "parking time":self.userParkedETimeField.text!
-        ])
-            
-        //let currentUserRef = usersReference.child(uid)
-        //currentUserRef.setValue([
-            //"parkingZone":self.userParkedZoneField.text!,
-            //"parkingTime":self.userParkedETimeField.text!
-        //])
-    }
-    
-    */
-
     @IBAction func parkedButtonTapped(_ sender: Any) {
         print("parked button tapped!")
         let ref = Database.database().reference()
