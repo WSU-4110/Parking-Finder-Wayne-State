@@ -4,6 +4,7 @@
 //
 //  Created by Server on 2/7/21.
 //
+// (Home/Park Interface)
 
 import UIKit
 import FirebaseDatabase
@@ -39,41 +40,32 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         // code make i change colors - notifyUserOnline.textColor = UIColor.blue
     }
     
-    
-    
-    // Eli write code to naviagate user to login View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
-    
-    
-    
-    
-    // Fahim write code to naviagate user to create profile View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
-    
-    
-    
-    @IBAction func homeButton(_ sender: Any)
-    {
-        
-        
 
-    }
     
-
+    //********************************************************
+    //* Event method triggered by PARKED button being tapped.
+    //* -Sends provided Parking Zone number and Time (in hours)
+    //*     to the database.
+    //********************************************************
     @IBAction func parkedButtonTapped(_ sender: Any) {
-        print("parked button tapped!")
-        let ref = Database.database().reference()
-        let usersReference = ref.child("users")
+        print("parked button tapped!") // Write to console for debugging purposes
+        let ref = Database.database().reference() // Define a reference to the database
+        let usersReference = ref.child("users") // Define a reference to the users table
     
         
-        let userRef = usersReference.child(Auth.auth().currentUser!.uid)
+        let userRef = usersReference.child(Auth.auth().currentUser!.uid) // Get the current user that is logged in
         
-        
+        // Write user ID to console for debugging
         let uid :String = (Auth.auth().currentUser?.uid)!
         print("Current user ID is" + uid)
+        
+        // Set values in the user entity for the parking zone and the time interval
         userRef.updateChildValues([
             "parking Zone": self.userParkedZoneField.text!,
             "parking time":self.userParkedETimeField.text!
         ])
         print("action finished")
+        
         // Parked Button is hidden when tapped
         let tapButton : UIButton = sender as! UIButton
             tapButton.isHidden = true;
