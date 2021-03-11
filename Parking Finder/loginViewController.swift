@@ -30,21 +30,44 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         loginButton.layer.shadowOffset = CGSize(width: 2, height: 3)
         loginButton.layer.shadowRadius = 1.0
         loginButton.layer.shadowOpacity = 1.5
+        
+        
+        loginButton.isEnabled = false
+        handleTextField()
     }
 
+    
+    func handleTextField()
+    {
+        userNameLoginField.addTarget(self, action: #selector(loginViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        userPasswordLoginField.addTarget(self, action: #selector(loginViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+    }
+    
+    @objc func textFieldDidChange()
+    {
+        guard let email = userNameLoginField.text, !email.isEmpty,
+              let password = userPasswordLoginField.text, !password.isEmpty
+        else
+        {
+            loginButton.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+            loginButton.isEnabled = false
+            return
+        }
+        loginButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        loginButton.isEnabled = true
+    }
+    
+    
     @IBAction func loginButton(_ sender: Any)
     {
-        
-        Auth.auth().signIn(withEmail: userNameLoginField.text!, password: userPasswordLoginField.text!) { (user: AuthDataResult?, error: Error?) in
-            if error != nil
-            {
-                print(error!.localizedDescription)
-                return
-            }
-            print(user?.user.email! as Any)                                                  // print console user's email
-            self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)       // user successfully login in with email and password go to home VC
-        }
-        
+        AuthService.signIn(email: userNameLoginField.text!, password: userPasswordLoginField.text!, onSuccess: {
+            self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)       // user successfully login in with email and password go to home VC*/
+        },
+        onError:
+            { error in
+                print(error!)
+        })
+    
         
         
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530A7C6D25FA8C8500977084 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A7C6C25FA8C8500977084 /* AuthService.swift */; };
 		530C119C25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		530C119D25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		530C119E25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530A7C6C25FA8C8500977084 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		531CEEF725DB29A1008CE498 /* createProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createProfileViewController.swift; sourceTree = "<group>"; };
 		531CEEF925DB2EFE008CE498 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				534DF44625F6A2C500472A1F /* Lato */,
 				53717D6F25D083350048FDE3 /* AppDelegate.swift */,
+				530A7C6C25FA8C8500977084 /* AuthService.swift */,
 				53717D7125D083350048FDE3 /* SceneDelegate.swift */,
 				53717D7325D083350048FDE3 /* ViewController.swift */,
 				531CEEF725DB29A1008CE498 /* createProfileViewController.swift */,
@@ -395,6 +398,7 @@
 				531CEEF825DB29A1008CE498 /* createProfileViewController.swift in Sources */,
 				53717D7425D083350048FDE3 /* ViewController.swift in Sources */,
 				53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */,
+				530A7C6D25FA8C8500977084 /* AuthService.swift in Sources */,
 				53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */,
 				531CEEFA25DB2EFE008CE498 /* loginViewController.swift in Sources */,
 			);

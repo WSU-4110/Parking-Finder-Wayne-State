@@ -146,7 +146,14 @@
                             <constraint firstItem="Y0a-Qf-uSB" firstAttribute="leading" secondItem="DsJ-pp-du0" secondAttribute="leading" constant="20" id="hiN-fr-1cM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="YSK-uH-J5O"/>
+                    <navigationItem key="navigationItem" title="Home" id="YSK-uH-J5O">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" image="icons8-man-raising-hand-icon-30" id="ZCX-EZ-UcR">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="logOut_Button:" destination="yeM-OQ-Ie4" id="qZu-vl-KRy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="homeButton" destination="9Gl-es-GlR" id="4Wt-v8-DZD"/>
                         <outlet property="userParkedETimeField" destination="rph-XZ-lXr" id="CZ1-jY-whq"/>
@@ -278,7 +285,7 @@
         <!--Login View Controller-->
         <scene sceneID="NQs-a8-5Tx">
             <objects>
-                <viewController id="NRo-ub-lh1" customClass="loginViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" modalPresentationStyle="fullScreen" id="NRo-ub-lh1" customClass="loginViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L6r-Mh-i0g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -419,7 +426,14 @@
                             <constraint firstItem="SNp-uN-9Oa" firstAttribute="trailing" secondItem="Yv2-Oi-WvN" secondAttribute="trailing" constant="23" id="Wme-dG-uA4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Finder" id="Jp1-Li-4B1"/>
+                    <navigationItem key="navigationItem" title="Finder" id="Jp1-Li-4B1">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" image="icons8-man-raising-hand-icon-30" id="4Sm-ga-E5D">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="logOut_FinderButton:" destination="tax-fS-u9k" id="YOT-fU-6cK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="s1q-ue-HPh" id="tH8-3h-RbN"/>
                     </connections>
@@ -435,6 +449,7 @@
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="icons8-home-30" width="30" height="30"/>
+        <image name="icons8-man-raising-hand-icon-30" width="30" height="30"/>
         <image name="icons8-parking-30" width="30" height="30"/>
         <image name="wsu_warriorw_color_band" width="2168" height="1379"/>
         <systemColor name="labelColor">
@@ -448,6 +463,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -72,6 +72,8 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
                 "parking time":""
             ])
             print("description\(newUserReference.description())")   // absolute path for location of the user
+            print("Create User button tapped!")
+            print("New user ID is: " + uid)
             self.performSegue(withIdentifier: "createToTabBarVC", sender: nil)      // go to home VC if user successfully created an account
         }
     }

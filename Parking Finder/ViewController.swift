@@ -25,10 +25,8 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     override func viewDidLoad()
     {
         super.viewDidLoad()
-    
         userParkedZoneField.delegate = self
         userParkedETimeField.delegate = self
-        
         
         
         // shadow for park button
@@ -36,17 +34,41 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         homeButton.layer.shadowOffset = CGSize(width: 2, height: 3)
         homeButton.layer.shadowRadius = 1.0
         homeButton.layer.shadowOpacity = 1.5
-        // code make i change colors - notifyUserOnline.textColor = UIColor.blue
     }
     
     
+    // Auto login if user forgets to log out
+    /*override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil
+        {
+            //print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
+            self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
+        }
+    }*/
     
-    // Eli write code to naviagate user to login View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
     
     
+    // Eli's Code to log users out
+    @IBAction func logOut_Button(_ sender: Any)
+    {
+        do
+        {
+            try Auth.auth().signOut()
+        }
+        catch let LogoutError
+        {
+            print(LogoutError)
+        }
     
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        print("log out button tapped!")
+        let signInVC = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+        self.present(signInVC, animated: true, completion: nil)
+        print("No Current User Signed in")
+    }
     
-    // Fahim write code to naviagate user to create profile View controller, similar to didTapCreateProfileButton() but instead of button do the VIEW element that holds all elements
     
     
     
@@ -68,7 +90,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         
         
         let uid :String = (Auth.auth().currentUser?.uid)!
-        print("Current user ID is" + uid)
+        print("Current user ID is: " + uid)
         userRef.updateChildValues([
             "parking Zone": self.userParkedZoneField.text!,
             "parking time":self.userParkedETimeField.text!
@@ -130,6 +152,23 @@ class finderViewController: UIViewController
         
     }
     
+    
+    // Eli Code Logout Button
+    @IBAction func logOut_FinderButton(_ sender: Any)
+    {
+        do
+        {
+            try Auth.auth().signOut()
+        }
+        catch let LogoutError
+        {
+            print(LogoutError)
+        }
+       // print(Auth.auth().currentUser)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let signInVC = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+        self.present(signInVC, animated: true, completion: nil)
+    }
     
     
     
