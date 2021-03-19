@@ -10,21 +10,22 @@ import FirebaseDatabase
 import FirebaseAuth
 
 // singleton design pattern
-struct signUpUsers
+class signUpUsers
 {
-    private let ref = Database.database().reference() // property
     
-    static let sharedInstance  = signUpUsers()  // instance
-        
-    func fetchNewUser(username: String, email: String, password: String, completion: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void)         //method
+    static let sharedInstance: signUpUsers  = signUpUsers()  // instance
+    
+    private init(){}        // prevent people from using default () initializer for this class
+    
+    public func fetchNewUser(username: String, email: String, password: String, completion: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void)         //method
     {
-        Auth.auth().createUser(withEmail: email, password: password) { (user: AuthDataResult?, error: Error?) in  // Authentificate users and create ID for them
+            Auth.auth().createUser(withEmail: email, password: password) { (user: AuthDataResult?, error: Error?) in  // Authentificate users and create ID for them
             if error != nil
             {
                 onError(error!.localizedDescription)
                 return
             }
-
+            let ref = Database.database().reference() // property
             let usersReference = ref.child("users")
             let uid = user!.user.uid                              // new firebase user object
             let newUserReference = usersReference.child(uid)        // new reference points to the new user object on firebase

@@ -60,6 +60,9 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     @IBAction func loginButton(_ sender: Any)
     {
+        
+
+        
         AuthService.signIn(email: userNameLoginField.text!, password: userPasswordLoginField.text!, onSuccess: {
             self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)       // user successfully login in with email and password go to home VC*/
         },
