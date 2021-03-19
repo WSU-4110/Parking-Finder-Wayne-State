@@ -24,6 +24,7 @@
 		534DF45A25F6A2C500472A1F /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534DF44F25F6A2C500472A1F /* Lato-BoldItalic.ttf */; };
 		534DF45B25F6A2C500472A1F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534DF45025F6A2C500472A1F /* Lato-Light.ttf */; };
 		534DF45C25F6A2C500472A1F /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 534DF45125F6A2C500472A1F /* Lato-ThinItalic.ttf */; };
+		537111AD26050459005CCF1F /* signUpUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537111AC26050459005CCF1F /* signUpUsers.swift */; };
 		53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D6F25D083350048FDE3 /* AppDelegate.swift */; };
 		53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7125D083350048FDE3 /* SceneDelegate.swift */; };
 		53717D7425D083350048FDE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D7325D083350048FDE3 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 		534DF44F25F6A2C500472A1F /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
 		534DF45025F6A2C500472A1F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		534DF45125F6A2C500472A1F /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		537111AC26050459005CCF1F /* signUpUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpUsers.swift; sourceTree = "<group>"; };
 		53717D6C25D083350048FDE3 /* Parking Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53717D6F25D083350048FDE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53717D7125D083350048FDE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,14 @@
 			path = Lato;
 			sourceTree = "<group>";
 		};
+		537111AB26050413005CCF1F /* signUp */ = {
+			isa = PBXGroup;
+			children = (
+				537111AC26050459005CCF1F /* signUpUsers.swift */,
+			);
+			path = signUp;
+			sourceTree = "<group>";
+		};
 		53717D6325D083350048FDE3 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +183,7 @@
 		53717D6E25D083350048FDE3 /* Parking Finder */ = {
 			isa = PBXGroup;
 			children = (
+				537111AB26050413005CCF1F /* signUp */,
 				534DF44625F6A2C500472A1F /* Lato */,
 				53717D6F25D083350048FDE3 /* AppDelegate.swift */,
 				530A7C6C25FA8C8500977084 /* AuthService.swift */,
@@ -397,6 +408,7 @@
 			files = (
 				531CEEF825DB29A1008CE498 /* createProfileViewController.swift in Sources */,
 				53717D7425D083350048FDE3 /* ViewController.swift in Sources */,
+				537111AD26050459005CCF1F /* signUpUsers.swift in Sources */,
 				53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */,
 				530A7C6D25FA8C8500977084 /* AuthService.swift in Sources */,
 				53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */,
