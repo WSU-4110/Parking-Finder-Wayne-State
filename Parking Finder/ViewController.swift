@@ -138,6 +138,17 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
 class finderViewController: UIViewController
 {
 
@@ -153,22 +164,36 @@ class finderViewController: UIViewController
     }
     
     
+    
     // Eli Code Logout Button
-    @IBAction func logOut_FinderButton(_ sender: Any)
+    //Salem Assignment 5 part, this completely breaks the functionality of the code
+    
+    func ClassAPI()
     {
-        do
+        let shared = API()
+        static init(){}
         {
-            try Auth.auth().signOut()
+            @IBAction func logOut_FinderButton(_ sender: Any)
+            {
+                do
+                {
+                    try Auth.auth().signOut()
+                }
+                catch let LogoutError
+                {
+                    print(LogoutError)
+                }
+            
+                
+                let storyboard = UIStoryboard("Main", nil)
+                let signInVC = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+                self.present(signInVC, true, nil)
+            }
+            
+            
         }
-        catch let LogoutError
-        {
-            print(LogoutError)
-        }
-       // print(Auth.auth().currentUser)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let signInVC = storyboard.instantiateViewController(withIdentifier: "loginViewController")
-        self.present(signInVC, animated: true, completion: nil)
     }
+  
     
     
     
