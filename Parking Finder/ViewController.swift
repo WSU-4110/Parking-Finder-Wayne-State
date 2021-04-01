@@ -83,11 +83,9 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     @IBAction func parkedButtonTapped(_ sender: Any) {
         print("parked button tapped!")
         let ref = Database.database().reference()
-        let usersReference = ref.child("users")
-    
         
-        let userRef = usersReference.child(Auth.auth().currentUser!.uid)
-        
+        let user = Users.getInstance()
+        user.setParkedZone(Int(self.userParkedZoneField.text!), Int(self.userParkedETimeField.text!))
         
         let uid :String = (Auth.auth().currentUser?.uid)!
         print("Current user ID is: " + uid)
