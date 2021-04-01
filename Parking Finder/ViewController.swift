@@ -38,7 +38,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     
     
     // Auto login if user forgets to log out
-    /*override func viewDidAppear(_ animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
         if Auth.auth().currentUser != nil
@@ -46,7 +46,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
             //print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
             self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
         }
-    }*/
+    }
     
     
     
