@@ -121,7 +121,7 @@ override func viewDidAppear(_ animated: Bool)
         super.viewDidAppear(animated)
         if Auth.auth().currentUser != nil
         {
-            //print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
+            print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
             self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
         }
     }
