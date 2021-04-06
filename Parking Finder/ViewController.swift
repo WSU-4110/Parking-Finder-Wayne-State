@@ -179,7 +179,7 @@ class finderViewController: UIViewController, MKMapViewDelegate
     let detailLabel = UILabel()
 
     
-    func placePins()                                                                                                            // instance method
+    func placePins()                                                                                                          // instance method
     {
         // set each pin coordinate and name
         let wayneParkingZonesC = [ParkingZone(name: "1", lattitude: 42.35722, longtitude: -83.06361111),

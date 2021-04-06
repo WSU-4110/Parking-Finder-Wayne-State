@@ -10,19 +10,20 @@ import UIKit
 import MapKit
 @testable import Parking_Finder
 
-
 class Parking_FinderTests: XCTestCase
 {
-    var map: finderViewController!
-    func Test_pins()
-    {
-        let map = finderViewController()            // class
-        
-        let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)     // result
-        let testing = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)             // result
-     
-        let _: () = map.setZoomLevel(location: CLLocation(latitude: 42.354405249, longitude: -83.0687297251))   //input
-        XCTAssertEqual((testing),locationLatLong)
-    }
+    var keyboard: homeViewController!
+    var parkedZone: UITextField!
+    var parkedTime: UITextField!
+    
 
+    func test_hide_keyboard()
+    {
+        XCTAssertEqual(parkedZone,parkedTime)
+    }
+    func test_text_Field()
+    {
+        XCTAssertNil(parkedZone)
+        XCTAssertNil(parkedTime)
+    }
 }
