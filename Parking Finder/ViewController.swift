@@ -9,6 +9,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 import MapKit
+import Foundation
 
 class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
@@ -148,18 +149,18 @@ class finderViewController: UIViewController, MKMapViewDelegate
     @IBOutlet weak var mapView: MKMapView!
     
     
-    override func viewDidLoad()
+    override func viewDidLoad()                                                                                     // method for overriding methods
     {
         super.viewDidLoad()
-        mapView.delegate = self
-        setZoomLevel(location: locationLatLong)
-        self.placePins()
+        mapView.delegate = self                                                 // instance method
+        setZoomLevel(location: locationLatLong)                                 // instance method
+        self.placePins()                                                        // instance method
     }
     
     // Configure map starting coorndinates
     let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)                                                                 // initial start coordinates
     let distanceSpan: CLLocationDistance = 1500                                                                                                         // initial start radius distance
-    func setZoomLevel(location: CLLocation)                                                                                                             // create region for zoom level
+    func setZoomLevel(location: CLLocation)                                 // instance method                                                          // create region for zoom level
     {
         let mapCoordinates = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: distanceSpan, longitudinalMeters: distanceSpan)
         mapView.setRegion(mapCoordinates, animated: true)
@@ -178,7 +179,7 @@ class finderViewController: UIViewController, MKMapViewDelegate
     let detailLabel = UILabel()
 
     
-    func placePins()
+    func placePins()                                                                                                            // instance method
     {
         // set each pin coordinate and name
         let wayneParkingZonesC = [ParkingZone(name: "1", lattitude: 42.35722, longtitude: -83.06361111),
@@ -226,7 +227,7 @@ var markerTintColor: UIColor
             return .green
     }
 }*/
-func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
+func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?                                           // instance method
 {
 
     /*let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "MyMarker")                              // change colors code
@@ -280,7 +281,7 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
 extension MKAnnotationView                                                                              // design of annotation container
 {
 
-    func annoDesign(arrangedSubviews: [UIView])
+    func annoDesign(arrangedSubviews: [UIView])                                                         // mutation METHOD
     {
         let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
         stackView.axis = .horizontal

@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import Foundation
 
 class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {

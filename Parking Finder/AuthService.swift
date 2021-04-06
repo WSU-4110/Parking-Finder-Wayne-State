@@ -10,7 +10,7 @@ import FirebaseAuth
 
 class AuthService
 {
-    static func signIn(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void)
+    static func signIn(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void)          // method
     {
         print("signin")
         Auth.auth().signIn(withEmail: email, password: password) { (user: AuthDataResult?, error: Error?) in
