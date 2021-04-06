@@ -15,15 +15,19 @@ class Parking_FinderTests: XCTestCase
     var keyboard: homeViewController!
     var parkedZone: UITextField!
     var parkedTime: UITextField!
-    
 
-    func test_hide_keyboard()
+    func test_keyboard_Numbers()
     {
-        XCTAssertEqual(parkedZone,parkedTime)
-    }
-    func test_text_Field()
-    {
-        XCTAssertNil(parkedZone)
-        XCTAssertNil(parkedTime)
+        let allowedCharacters = "+1234567890"
+        XCTAssertTrue(allowedCharacters.count == 11)
+        let maxLength = 3
+        XCTAssertTrue(maxLength == 3)
+        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
+        let typedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
+        XCTAssertEqual(allowedCharacterSet,typedCharacterSet)
+        
+        let newSet = allowedCharacterSet.isSuperset(of: typedCharacterSet)
+        
+        XCTAssertNotNil(newSet)
     }
 }
