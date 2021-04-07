@@ -12,22 +12,41 @@ import MapKit
 
 class Parking_FinderTests: XCTestCase
 {
-    var keyboard: homeViewController!
-    var parkedZone: UITextField!
-    var parkedTime: UITextField!
+    var login: loginViewController!
+    var userEmail: UITextField!
+    var userPassword: UITextField!
+    var loginButton: UIButton!
+    
 
-    func test_keyboard_Numbers()
+    
+    func test_textField_Empty()
     {
-        let allowedCharacters = "+1234567890"
-        XCTAssertTrue(allowedCharacters.count == 11)
-        let maxLength = 3
-        XCTAssertTrue(maxLength == 3)
-        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
-        let typedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
-        XCTAssertEqual(allowedCharacterSet,typedCharacterSet)
+
+        XCTAssertNil(userEmail)             // field start off no input so should be nil
+        XCTAssertNil(userPassword)
+        let both = (userEmail , userPassword)
+        if both == nil
+        {
+            XCTAssertFalse(login.loginButton.isEnabled == false)
+        }
+
+ 
+    }
+    func test_textField_Used()
+    {
+
+        let userEmail = "hithere"
+        XCTAssertNotNil(userEmail)             // field has input so should not be nil
+        let userPassword = "123456789"
+        XCTAssertNotNil(userPassword)
+   
         
-        let newSet = allowedCharacterSet.isSuperset(of: typedCharacterSet)
-        
-        XCTAssertNotNil(newSet)
+        let both = (userEmail , userPassword)
+        if both == nil
+        {
+            XCTAssertTrue(login.loginButton.isEnabled == false)
+        }
+     
+
     }
 }
