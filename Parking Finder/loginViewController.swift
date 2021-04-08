@@ -84,6 +84,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         // Login Profile Button is hidden when tapped--------------------------------------------
         let tapButton : UIButton = sender as! UIButton
             tapButton.isHidden = true;
+         test lmao
         */
     }
     
