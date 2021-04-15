@@ -14,18 +14,12 @@ import Firebase
 
 class AppDelegate: UIResponder, UIAppDelegate
 {
-    func Testing_saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-               
-                let error = error as Error
-              fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-    }
 
+    func Testing_application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration
+    {
+   
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+         XCTAssertNotNil(UIApplication)
 }
 
