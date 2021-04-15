@@ -19,31 +19,23 @@ import XCTest
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 class Parking_FinderTests: XCTestCase
 {
     var mapView: MKMapView!
-    
-    func Test_mapView(_ mapView: MKMapView,  viewFor annotation: MKAnnotation )
+     func Testing_annoDesign(arrangedSubviews: [UIView])
     {
-            let testing = "MyMarker"
+            let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
+                stackView.axis = .horizontal
+                stackView.distribution = .fillEqually
+                stackView.alignment = .fill
+                stackView.spacing = 5
+                stackView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
+                stackView.translatesAutoresizingMaskIntoConstraints = false
+            
+                
+                let detailCalloutAccessoryView = stackView
         
-            let annotationIdentifier = "MyMarker"
-            let  _ = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
-        
-        
-        
-             XCTAssertEqual((testing),annotationIdentifier)
+            XCTAssertNotNil(stackView)
         }
             
 
