@@ -5,10 +5,10 @@
 //  Created by Server on 2/7/21.
 //
 
+import XCTest
 import UIKit
 import MapKit
-import CoreData
-import XCTest
+import firebase
 
 @testable import Parking_Finder
 
@@ -17,27 +17,32 @@ import XCTest
 
 
 
-
-
 class Parking_FinderTests: XCTestCase
 {
-    var mapView: MKMapView!
-     func Testing_annoDesign(arrangedSubviews: [UIView])
-    {
-            let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
-                stackView.axis = .horizontal
-                stackView.distribution = .fillEqually
-                stackView.alignment = .fill
-                stackView.spacing = 5
-                stackView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
-                stackView.translatesAutoresizingMaskIntoConstraints = false
-            
-                
-                let detailCalloutAccessoryView = stackView
-        
-            XCTAssertNotNil(stackView)
-        }
-            
+    
+func Testing_parkedButtonTapped(_ sender: Any) {
+    
+        print("parked button tapped!")
+        let ref = Database.database().reference()
+        let usersReference = ref.child("users")
+
+    
+        let userRef = usersReference.child(Auth.auth().currentUser!.uid)
+    
+    
+        let uid :String = (Auth.auth().currentUser?.uid)!
+        print("Current user ID is: " + uid)
+        userRef.updateChildValues(["parking Zone": self.userParkedZoneField.text!,"parking time":self.userParkedETimeField.text!])
+    
+        print("action finished")
+   
+        let tapButton : UIButton = sender as! UIButton
+            tapButton.isHidden = true;
+    
+     XCTAssertNotNil((uid), usersReference)
+    
+    }
 
 }
+
 
