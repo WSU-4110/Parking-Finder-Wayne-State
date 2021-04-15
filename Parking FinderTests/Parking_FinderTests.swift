@@ -9,13 +9,22 @@ import XCTest
 import UIKit
 import CoreData
 import Firebase
+
+
 @testable import Parking_Finder
 
 class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
+    
+    
+    
 func Testing_viewDidLoad()
 {
+    
+    
+    
     super.viewDidLoad()
+    
     let userParkedZoneField;.delegate = self
     let userParkedETimeField;.delegate = self
     
@@ -29,5 +38,6 @@ func Testing_viewDidLoad()
     
      XCTAssertNotNil(viewDidLoad)
 }
+    
 }
 
