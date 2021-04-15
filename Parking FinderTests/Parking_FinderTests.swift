@@ -11,15 +11,23 @@ import CoreData
 import Firebase
 @testable import Parking_Finder
 
-
-class AppDelegate: UIResponder, UIAppDelegate
+class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
-
-    func Testing_application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration
-    {
-   
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-         XCTAssertNotNil(UIApplication)
+func Testing_viewDidLoad()
+{
+    super.viewDidLoad()
+    let userParkedZoneField;.delegate = self
+    let userParkedETimeField;.delegate = self
+    
+    
+    // shadow for park button
+    let homeButton;.layer.shadowColor = UIColor.black.cgColor
+    let homeButton;.layer.shadowOffset = CGSize(width: 2, height: 3)
+    let homeButton;.layer.shadowRadius = 1.0
+    let homeButton;.layer.shadowOpacity = 1.5
+    
+    
+     XCTAssertNotNil(viewDidLoad)
+}
 }
 
