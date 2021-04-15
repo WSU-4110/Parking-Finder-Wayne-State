@@ -5,29 +5,47 @@
 //  Created by Server on 2/7/21.
 //
 
+import UIKit
+import MapKit
+import CoreData
 import XCTest
+
 @testable import Parking_Finder
 
-class Parking_FinderTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Parking_FinderTests: XCTestCase
+{
+    var mapView: MKMapView!
+    
+    func Test_mapView(_ mapView: MKMapView,  viewFor annotation: MKAnnotation )
+    {
+            let testing = "MyMarker"
+        
+            let annotationIdentifier = "MyMarker"
+            let  _ = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
+        
+        
+        
+             XCTAssertEqual((testing),annotationIdentifier)
         }
-    }
+            
 
 }
+
