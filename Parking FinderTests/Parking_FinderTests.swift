@@ -7,42 +7,25 @@
 
 import XCTest
 import UIKit
-import MapKit
-import firebase
-
+import CoreData
+import Firebase
 @testable import Parking_Finder
 
 
-
-
-
-
-class Parking_FinderTests: XCTestCase
+class AppDelegate: UIResponder, UIAppDelegate
 {
-    
-func Testing_parkedButtonTapped(_ sender: Any) {
-    
-        print("parked button tapped!")
-        let ref = Database.database().reference()
-        let usersReference = ref.child("users")
-
-    
-        let userRef = usersReference.child(Auth.auth().currentUser!.uid)
-    
-    
-        let uid :String = (Auth.auth().currentUser?.uid)!
-        print("Current user ID is: " + uid)
-        userRef.updateChildValues(["parking Zone": self.userParkedZoneField.text!,"parking time":self.userParkedETimeField.text!])
-    
-        print("action finished")
-   
-        let tapButton : UIButton = sender as! UIButton
-            tapButton.isHidden = true;
-    
-     XCTAssertNotNil((uid), usersReference)
-    
+    func Testing_saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+               
+                let error = error as Error
+              fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        }
     }
 
 }
-
 
