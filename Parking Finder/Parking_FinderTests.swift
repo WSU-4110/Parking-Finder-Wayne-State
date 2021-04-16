@@ -12,9 +12,9 @@ import Foundation
 class Parking_FinderTests: XCTestCase
 {
     @IBOutlet weak var mapView: MKMapView!
-    func test_viewDidLoad()
+     func test_viewDidLoad()
     
-    override func viewDidLoad()
+     override func viewDidLoad()
     {
         super.viewDidLoad()
         mapView.delegate = self
@@ -23,13 +23,13 @@ class Parking_FinderTests: XCTestCase
         func test_viewDidLoad()
     }
     
-    func XCTAssertEqual(viewDidLoad : setZoomlevel);
-    
+     func XCTAssertEqual(viewDidLoad : setZoomlevel);
+   
     // Configure map starting coorndinates
     let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)                                                                 // initial start coordinates
     let distanceSpan: CLLocationDistance = 1500                                                                                                         // initial start radius distance
     func setZoomLevel(location: CLLocation)
-    func test_setZoomLevel()    // create region for zoom level
+     func test_setZoomLevel()    // create region for zoom level
     {
         let mapCoordinates = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: distanceSpan, longitudinalMeters: distanceSpan)
         mapView.setRegion(mapCoordinates, animated: true)
@@ -37,7 +37,7 @@ class Parking_FinderTests: XCTestCase
     
     // structure for annotation pins
     struct ParkingZone{
-    func test_ParkingZone()
+     func test_ParkingZone()
     {
         var name: String
         var lattitude: CLLocationDegrees
@@ -73,7 +73,7 @@ class Parking_FinderTests: XCTestCase
                                  ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778)
         ]
         
-        func test_wayneParkingZoneC()
+         func test_wayneParkingZoneC()
         {
         // add each annotation parking zone with its info
         for ParkingZone in wayneParkingZonesC
@@ -119,11 +119,11 @@ func mapView(mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotati
         default:                                                                   // if nothing than be grey
             annotationView.markerTintColor = UIColor.gray
     }*/
-    func test_mapView()
+     func test_mapView()
     let annotationIdentifier = "MyMarker"
     var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
     
-    func test_annotationView()
+     func test_annotationView()
     /*var image: UIImage
     {
       guard let name = discipline
@@ -134,7 +134,7 @@ func mapView(mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotati
     
     if annotationView == nil
     {
-    XCTAssertNil(annotationView)
+     XCTAssertNil(annotationView)
     {
         annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
         annotationView!.canShowCallout = true
@@ -179,7 +179,7 @@ XCTAssertNil(MKAnnotationView)// design of annotation container
         func test_annoDesign()
         self.detailCalloutAccessoryView = stackView
     }
-    func test_annoDesign()
+     func test_annoDesign()
     XCTAssertNil(annoDesign)
     
     
