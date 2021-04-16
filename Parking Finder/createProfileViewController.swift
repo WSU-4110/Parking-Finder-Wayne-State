@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import FirebaseDatabase
-import FirebaseAuth
+//import FirebaseDatabase
+//import FirebaseAuth
 
 class createProfileViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {

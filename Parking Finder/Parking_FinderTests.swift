@@ -1,153 +1,18 @@
 //
-//  ViewController.swift
+//  Parking_FinderTests.swift
 //  Parking Finder
 //
-//  Created by Server on 2/7/21.
+//  Created by Salem Baraka on 4/15/21.
 //
 
-import UIKit
-//import FirebaseDatabase
-//import FirebaseAuth
 import MapKit
+import Foundation
+@testable import Parking_Finder
 
-class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
-{
-
-    
-    // Outlets for text fields and button
-    @IBOutlet weak var userParkedZoneField: UITextField!
-    @IBOutlet weak var userParkedETimeField: UITextField!
-    @IBOutlet weak var homeButton: UIButton!
-    
-    
-
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        userParkedZoneField.delegate = self
-        userParkedETimeField.delegate = self
-        
-        
-        // shadow for park button
-        homeButton.layer.shadowColor = UIColor.black.cgColor
-        homeButton.layer.shadowOffset = CGSize(width: 2, height: 3)
-        homeButton.layer.shadowRadius = 1.0
-        homeButton.layer.shadowOpacity = 1.5
-    }
-    
-    
-    // Auto login if user forgets to log out
-    /*override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil
-        {
-            //print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
-            self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
-        }
-    }*/
-    
-
-    
-    // Eli's Code to log users out
-    @IBAction func logOut_Button(_ sender: Any)
-    {
-        do
-        {
-            try Auth.auth().signOut()
-        }
-        catch let LogoutError
-        {
-            print(LogoutError)
-        }
-    
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        print("log out button tapped!")
-        let signInVC = storyboard.instantiateViewController(withIdentifier: "loginViewController")
-        self.present(signInVC, animated: true, completion: nil)
-        print("No Current User Signed in")
-    }
-    
-    
-    
-    
-    @IBAction func homeButton(_ sender: Any)
-    {
-        
-    }
-    
-
-    @IBAction func parkedButtonTapped(_ sender: Any) {
-        print("parked button tapped!")
-        let ref = Database.database().reference()
-        let usersReference = ref.child("users")
-    
-        
-        let userRef = usersReference.child(Auth.auth().currentUser!.uid)
-        
-        
-        let uid :String = (Auth.auth().currentUser?.uid)!
-        print("Current user ID is: " + uid)
-        userRef.updateChildValues([
-            "parking Zone": self.userParkedZoneField.text!,
-            "parking time":self.userParkedETimeField.text!
-        ])
-        print("action finished")
-        // Parked Button is hidden when tapped
-        let tapButton : UIButton = sender as! UIButton
-            tapButton.isHidden = true;
-    }
-    
-    
-    // Func Handle textfields Home Page
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
-    {
-        // code that allows users to enter only numbers
-        let allowedCharacters = "+1234567890"
-        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
-        let typedCharacterSet = CharacterSet(charactersIn: string)
-        
-        // code that allows users to enter three numbers total
-        let maxLength = 3
-        let currentString: NSString = (textField.text ?? "") as NSString
-        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-        
-        return allowedCharacterSet.isSuperset(of: typedCharacterSet) && newString.length <= maxLength
-    }
-
-    
-    
-    
-    
-    //keyboard methods for fields
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
-        hidekeyboardHome()
-        return true
-    }
-    // Func hideKeyboard
-    func hidekeyboardHome()
-    {
-        print("Hide Keyboard")
-        userParkedZoneField.resignFirstResponder()
-        userParkedETimeField.resignFirstResponder()
-    }
-
-    
-}
-
-
-
-
-
-
-//Salem parts for  the unit testing
-
-class finderViewController: UIViewController, MKMapViewDelegate
+class Parking_FinderTests: XCTestCase
 {
     @IBOutlet weak var mapView: MKMapView!
-    
+    func test_viewDidLoad()
     
     override func viewDidLoad()
     {
@@ -155,25 +20,33 @@ class finderViewController: UIViewController, MKMapViewDelegate
         mapView.delegate = self
         setZoomLevel(location: locationLatLong)
         self.placePins()
+        func test_viewDidLoad()
     }
+    
+    func XCTAssertEqual(viewDidLoad : setZoomlevel);
     
     // Configure map starting coorndinates
     let locationLatLong = CLLocation(latitude: 42.354405249, longitude: -83.0687297251)                                                                 // initial start coordinates
     let distanceSpan: CLLocationDistance = 1500                                                                                                         // initial start radius distance
-    func setZoomLevel(location: CLLocation)                                                                                                             // create region for zoom level
+    func setZoomLevel(location: CLLocation)
+    func test_setZoomLevel()    // create region for zoom level
     {
         let mapCoordinates = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: distanceSpan, longitudinalMeters: distanceSpan)
         mapView.setRegion(mapCoordinates, animated: true)
     }
     
     // structure for annotation pins
-    struct ParkingZone
+    struct ParkingZone{
+    func test_ParkingZone()
     {
         var name: String
         var lattitude: CLLocationDegrees
         var longtitude: CLLocationDegrees
     }
 
+        func XCTAssertNil(name:())
+        func XCTAssertNil(lattitude:())
+        func XCTAssertNil(longtitude:())
     
     
     let detailLabel = UILabel()
@@ -199,6 +72,9 @@ class finderViewController: UIViewController, MKMapViewDelegate
                                  ParkingZone(name: "\"206\"", lattitude: 42.35390, longtitude: -83.06555556),
                                  ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778)
         ]
+        
+        func test_wayneParkingZoneC()
+        {
         // add each annotation parking zone with its info
         for ParkingZone in wayneParkingZonesC
         {
@@ -227,7 +103,7 @@ var markerTintColor: UIColor
             return .green
     }
 }*/
-func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
+func mapView(mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
 {
 
     /*let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "MyMarker")                              // change colors code
@@ -243,10 +119,11 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
         default:                                                                   // if nothing than be grey
             annotationView.markerTintColor = UIColor.gray
     }*/
-    
+    func test_mapView()
     let annotationIdentifier = "MyMarker"
     var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
     
+    func test_annotationView()
     /*var image: UIImage
     {
       guard let name = discipline
@@ -257,6 +134,8 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
     
     if annotationView == nil
     {
+    XCTAssertNil(annotationView)
+    {
         annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
         annotationView!.canShowCallout = true
         
@@ -265,20 +144,26 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
         
         annotationView!.annoDesign(arrangedSubviews: [UIButton(type: .detailDisclosure), UIButton(type: .detailDisclosure), UIButton(type: .detailDisclosure)])     // three added info buttons
     }
+    
+    
     else
+        {
     {
         annotationView!.annotation = annotation
     }
     return annotationView
 }
     
-
-    
+    func test_annotationView()
+       {
+           XCTAssertEqual(UIburron, canShowCallout)
+       }
 }
 
 
 
-extension MKAnnotationView                                                                              // design of annotation container
+ MKAnnotationView
+XCTAssertNil(MKAnnotationView)// design of annotation container
 {
 
     func annoDesign(arrangedSubviews: [UIView])
@@ -291,9 +176,13 @@ extension MKAnnotationView                                                      
         stackView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
         stackView.translatesAutoresizingMaskIntoConstraints = false
     
-        
+        func test_annoDesign()
         self.detailCalloutAccessoryView = stackView
     }
+    func test_annoDesign()
+    XCTAssertNil(annoDesign)
+    
+    
 }
 
 /*extension finderViewController
@@ -317,4 +206,10 @@ extension MKAnnotationView                                                      
     }
     
 }*/
+
+
+    
+    
+    
+    
 
