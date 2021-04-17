@@ -165,6 +165,55 @@
             </objects>
             <point key="canvasLocation" x="-2475" y="1365"/>
         </scene>
+        <!--Reset Password-->
+        <scene sceneID="Dl3-PS-1fM">
+            <objects>
+                <viewController id="E6X-sJ-Mbc" customClass="resetPassword" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTo-uI-Tll">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xl0-Z5-x3O">
+                                <rect key="frame" x="20" y="39" width="374" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Es9-YG-clA">
+                                        <rect key="frame" x="37" y="374" width="300" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type email here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpA-Mz-SuV">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-Sz-bnu">
+                                                <rect key="frame" x="0.0" y="34" width="300" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal" title="RESET MY PASSWORD">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="R9F-NC-Oz8"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ckY-de-JX1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xl0-Z5-x3O" firstAttribute="leading" secondItem="ckY-de-JX1" secondAttribute="leading" constant="20" id="bPT-U0-N83"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v8Q-zI-FFI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeU-nI-kPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4978.2608695652179" y="626.78571428571422"/>
+        </scene>
         <!--Create Profile View Controller-->
         <scene sceneID="DxC-cR-bfc">
             <objects>
@@ -363,12 +412,22 @@
                                         <rect key="frame" x="57" y="29" width="260" height="363"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-Ef-qS5">
+                                        <rect key="frame" x="119.5" y="641" width="135" height="36"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Forgot Password?"/>
+                                        <connections>
+                                            <segue destination="E6X-sJ-Mbc" kind="show" id="5Ly-PG-tdG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="6yq-ry-01L"/>
                                     <constraint firstAttribute="height" constant="818" id="9wq-PD-0Mg"/>
+                                    <constraint firstItem="duz-Ef-qS5" firstAttribute="centerY" secondItem="v6t-m2-ftK" secondAttribute="centerY" constant="250" id="Ffg-n6-HJO"/>
                                     <constraint firstItem="s7A-dp-Te5" firstAttribute="centerY" secondItem="v6t-m2-ftK" secondAttribute="centerY" constant="-350" id="Op5-ir-BKl"/>
+                                    <constraint firstItem="duz-Ef-qS5" firstAttribute="centerX" secondItem="v6t-m2-ftK" secondAttribute="centerX" id="P37-iv-O4T"/>
                                     <constraint firstItem="XMN-pK-ycO" firstAttribute="centerY" secondItem="v6t-m2-ftK" secondAttribute="centerY" constant="25" id="WKg-K4-csl"/>
                                     <constraint firstItem="AM8-XW-Lfg" firstAttribute="centerX" secondItem="v6t-m2-ftK" secondAttribute="centerX" id="Zc6-8n-IgT"/>
                                     <constraint firstItem="XMN-pK-ycO" firstAttribute="centerX" secondItem="v6t-m2-ftK" secondAttribute="centerX" id="hu9-s3-2bu"/>
@@ -444,7 +503,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ckY-iQ-OJb"/>
+        <segue reference="Ayx-rD-1Nm"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

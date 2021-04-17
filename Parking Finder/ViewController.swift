@@ -19,9 +19,6 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
     @IBOutlet weak var userParkedETimeField: UITextField!
     @IBOutlet weak var homeButton: UIButton!
     
-    
-
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -68,8 +65,6 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         self.present(signInVC, animated: true, completion: nil)
         print("No Current User Signed in")
     }
-    
-    
     
     
     @IBAction func homeButton(_ sender: Any)
@@ -140,20 +135,17 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
 
 
 
-
-
-
-class finderViewController: UIViewController, MKMapViewDelegate
+class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
 {
     @IBOutlet weak var mapView: MKMapView!
-    
-    
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
         mapView.delegate = self
         setZoomLevel(location: locationLatLong)
         self.placePins()
+
     }
     
     // Configure map starting coorndinates
@@ -172,10 +164,6 @@ class finderViewController: UIViewController, MKMapViewDelegate
         var lattitude: CLLocationDegrees
         var longtitude: CLLocationDegrees
     }
-
-    
-    
-    let detailLabel = UILabel()
 
     
     func placePins()
@@ -207,80 +195,100 @@ class finderViewController: UIViewController, MKMapViewDelegate
             mapView.addAnnotation(annotation)
         }
     }
+    
 
     
-/*
-var markerTintColor: UIColor
+func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?//(MKAnnotationView?, MKMarkerAnnotationView)
 {
-    switch annotation.title!!
+    
+    let annotationIdentifier = "MyMarker"
+    var annoView = self.mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
+    
+    //let annotationIdentifierr = "pin"
+    let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+    annotationView.markerTintColor = .blue
+    
+    if annoView == nil
     {
-        case "Monument":
-            return .red
-        case "Mural":
-            return .cyan
-        case "Plaque":
-            return .blue
-        case "Sculpture":
-            return .purple
-        default:
-            return .green
+        annoView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+        annoView?.canShowCallout = true
+        
+        // isEmpty button
+        let emptyBtn = UIButton(type: .detailDisclosure)
+        emptyBtn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        emptyBtn.backgroundColor = UIColor.green
+        emptyBtn.layer.borderColor = UIColor.darkGray.cgColor
+        emptyBtn.layer.cornerRadius = 5
+        emptyBtn.layer.masksToBounds = true
+        emptyBtn.addTarget(self, action:#selector(self.isEmptyClicked), for: .touchUpInside)
+
+        // isFull button
+        let fullBtn = UIButton(type: .detailDisclosure)
+        fullBtn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        fullBtn.backgroundColor = UIColor.red
+        fullBtn.layer.borderColor = UIColor.darkGray.cgColor
+        fullBtn.layer.cornerRadius = 5
+        fullBtn.layer.masksToBounds = true
+        fullBtn.addTarget(self, action:#selector(self.isFullClicked), for: .touchUpInside)
+        
+        // isExtended button
+        let extendedBtn = UIButton(type: .detailDisclosure)
+        extendedBtn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        extendedBtn.backgroundColor = UIColor.blue
+        extendedBtn.layer.borderColor = UIColor.darkGray.cgColor
+        extendedBtn.layer.cornerRadius = 5
+        extendedBtn.layer.masksToBounds = true
+        extendedBtn.addTarget(self, action:#selector(self.isExtendedClicked), for: .touchUpInside)
+        
+       annoView!.annoViewDesign(arrangedSubviews: [emptyBtn, fullBtn, extendedBtn])              // three added info buttons
+       
     }
-}*/
-func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
-{
-
-    /*let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "MyMarker")                              // change colors code
-    
-    switch annotation.title
+    else
     {
-        case "1":                                                               // add available func
+        annoView?.annotation = annotation
+    }
+    //annoView = annotationView                 // returns color not buttons
+    return annoView
+}
+    
+
+    @objc func isEmptyClicked()
+    {
+        print("isEmpty Clicked")
+        
+        //let annotationView = MKMarkerAnnotationView()
+        //annotationView.self.markerTintColor = UIColor.green
+        //annotationView.markerTintColor = UIColor.gray
+    }
+    
+    @objc func isFullClicked()
+    {
+        print("isFull Clicked")
+    }
+    
+    @objc func isExtendedClicked()
+    {
+        print("isExtended Clicked")
+    }
+    
+    /*switch annotation.title
+    {
+        case "1":
+            isEmptyClicked()                                      // add available func
             annotationView.markerTintColor = UIColor.green
-        case "2":                                                                // add extended func
+        case "B":                                                                // add extended func
             annotationView.markerTintColor = UIColor.blue
         case "3":                                                                 // add full func
             annotationView.markerTintColor = UIColor.red
         default:                                                                   // if nothing than be grey
             annotationView.markerTintColor = UIColor.gray
     }*/
-    
-    let annotationIdentifier = "MyMarker"
-    var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
-    
-    /*var image: UIImage
-    {
-      guard let name = discipline
-    else
-    {
-        return #imageLiteral(resourceName: "Flag")
-    }*/
-    
-    if annotationView == nil
-    {
-        annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
-        annotationView!.canShowCallout = true
-        
-        //let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 48, height: 48)))
-       // mapsButton.setBackgroundImage(#, for: .normal)
-        
-        annotationView!.annoDesign(arrangedSubviews: [UIButton(type: .detailDisclosure), UIButton(type: .detailDisclosure), UIButton(type: .detailDisclosure)])     // three added info buttons
-    }
-    else
-    {
-        annotationView!.annotation = annotation
-    }
-    return annotationView
 }
-    
-
-    
-}
-
-
 
 extension MKAnnotationView                                                                              // design of annotation container
 {
 
-    func annoDesign(arrangedSubviews: [UIView])
+    func annoViewDesign(arrangedSubviews: [UIView])
     {
         let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
         stackView.axis = .horizontal
@@ -289,31 +297,23 @@ extension MKAnnotationView                                                      
         stackView.spacing = 5
         stackView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
         stackView.translatesAutoresizingMaskIntoConstraints = false
-    
-        
+
         self.detailCalloutAccessoryView = stackView
     }
 }
 
-/*extension finderViewController
+/*extension MKAnnotation                                                                            // design of annotation container
 {
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
+
+    func annoDesign(type: [UIButton])
     {
-        let annotationIdentifier = "MyMarker"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)
-
-        if annotationView == nil
-        {
-            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
-            annotationView!.canShowCallout = true
-            annotationView!.annoDesign(arrangedSubviews: [UIButton(type: .detailDisclosure), UIButton(type: .detailDisclosure), UIButton(type: .detailDisclosure)])
-        }
-        else
-        {
-            annotationView!.annotation = annotation
-        }
-        return annotationView
-    }
+       // let btn:UIButton = UIButton(type: .detailDisclosure)
+        let btn:UIButton = UIButton(type: UIButton.ButtonType.detailDisclosure)
+        btn.setTitle("Detail Disclosure", for: UIControl.State.normal)
+        btn.backgroundColor = UIColor.blue
+        btn.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
+        btn.translatesAutoresizingMaskIntoConstraints = false
     
+        self.view.addSubview(btn)
+    }
 }*/
-
