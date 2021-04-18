@@ -227,7 +227,7 @@ class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManag
 
             ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
 
-            ParkingZone(name: "\"206\"", lattitude:  42.35592956086741, longtitude: -83.06645057687177)
+            ParkingZone(name: "\"206\"", lattitude:  42.35592956086741, longtitude: -83.06645057687177),
             
             ParkingZone(name: "\"206\"", lattitude:  42.35389678824058, longtitude: -83.07285762845464),
             
