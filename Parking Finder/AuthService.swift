@@ -26,5 +26,15 @@ class AuthService
             print("current User Email is: ", user?.user.email! as Any)            // print console user's email
         }
     }
-
+    static func resetPassword(email: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if error == nil {
+                onSuccess()
+            }
+            else{
+                onError(error!.localizedDescription)
+            }
+        }
+    }
+    
 }

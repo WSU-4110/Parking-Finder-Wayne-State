@@ -18,7 +18,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     @IBOutlet weak var userPasswordLoginField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -35,7 +34,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         loginButton.isEnabled = false
         handleTextField()
     }
-
     
     func handleTextField()
     {
@@ -98,7 +96,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     }
     
     
-    
+
     
     
     

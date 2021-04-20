@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="-2475" y="1365"/>
         </scene>
-        <!--Reset Password-->
+        <!--Reset Password View Controller-->
         <scene sceneID="Dl3-PS-1fM">
             <objects>
-                <viewController id="E6X-sJ-Mbc" customClass="resetPassword" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E6X-sJ-Mbc" customClass="resetPasswordViewController" customModule="Parking_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTo-uI-Tll">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,9 @@
                                                 <state key="normal" title="RESET MY PASSWORD">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="resetPasswordDidTapped:" destination="E6X-sJ-Mbc" eventType="touchUpInside" id="pS7-Ej-eIr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -209,6 +212,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v8Q-zI-FFI"/>
+                    <connections>
+                        <outlet property="userEmailForResetField" destination="KpA-Mz-SuV" id="0Aw-e7-cF1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeU-nI-kPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
