@@ -91,7 +91,17 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     @IBAction func noAccountButton(_ sender: Any)
     {
-        
+        func testFieldShouldReturn(_: bool)
+        {
+            hidekeyboardProfile()
+            return true
+        }
+        func hidekeyboardProfile()
+        {
+            print("Please create an account")
+            userNameLoginField.resignFirstResponder()
+            userPasswordLoginField.resignFirstResponder()
+        }
         
     }
     
