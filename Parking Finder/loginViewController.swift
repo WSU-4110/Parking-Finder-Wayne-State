@@ -33,6 +33,16 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         
         loginButton.isEnabled = false
         handleTextField()
+        
+        // Eli code Auto Login 
+                 if Auth.auth().currentUser != nil
+        {
+           print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
+           Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: {(timer) in
+           self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
+       })
+           }
+
     }
     
     func handleTextField()
