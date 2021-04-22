@@ -4,21 +4,17 @@
 //
 //  Created by Server on 2/15/21.
 //
-
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
 class createProfileViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
-    
     // Outlets
     @IBOutlet weak var userEmailField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var userPasswordField: UITextField!
     @IBOutlet weak var createUserButton: UIButton!
-    
-
 
     override func viewDidLoad()
     {
@@ -33,22 +29,9 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         createUserButton.layer.shadowOffset = CGSize(width: 2, height: 3)
         createUserButton.layer.shadowRadius = 1.0
         createUserButton.layer.shadowOpacity = 1.5
-        
-      /*
-        database.child("Users").observeSingleEvent(of: .value, with: {snapshot in
-        guard let value = snapshot.value as? [String: Any]
-        else
-        {
-            return
-        }
-            print("Value: \(value)")
-        })*/
-        
-        
+
     }
-    
-    
-    
+
     @IBAction func createUserButton(_ sender: Any)
     {
         Auth.auth().createUser(withEmail: userEmailField.text!, password: userPasswordField.text!) { (user: AuthDataResult?, error: Error?) in  // Authentificate users and create ID for them
@@ -78,7 +61,6 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         }
     }
     
-    
     // Action to send user create profile data to database
    /* @IBAction func createTapped(_ sender: Any)
     {
@@ -97,10 +79,8 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         let tapButton : UIButton = sender as! UIButton
             tapButton.isHidden = true;
     }*/
-
     // (Trevor) I think this is done in this class? The addToDatabase function will be called by Fahim to update the database when the user submits their new profile 
     // information, passing the user's form inputs in the argument
-    //
 
 
     //keyboard methods for fields
@@ -116,6 +96,4 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         userNameField.resignFirstResponder()
         userPasswordField.resignFirstResponder()
     }
-    
-
 }

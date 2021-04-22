@@ -1,0 +1,978 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRActionCodeSettings.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRActionCodeSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAdditionalUserInfo.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuth.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthAPNSTokenType.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthCredential.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthDataResult.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthDataResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthErrors.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthSettings.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthTokenResult.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthTokenResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthUIDelegate.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIREmailAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIREmailAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRFacebookAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRFederatedAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRFederatedAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGameCenterAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRGameCenterAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGitHubAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGoogleAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMultiFactor.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactor.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMultiFactorAssertion.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactorAssertion.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMultiFactorInfo.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactorInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMultiFactorResolver.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactorResolver.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMultiFactorSession.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactorSession.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROAuthCredential.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIROAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIROAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneAuthCredential.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneMultiFactorAssertion.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneMultiFactorAssertion.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneMultiFactorGenerator.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneMultiFactorGenerator.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneMultiFactorInfo.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneMultiFactorInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTwitterAuthProvider.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUser.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRUser.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUserInfo.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRUserInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUserMetadata.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRUserMetadata.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/FirebaseAuth/FirebaseAuth-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FirebaseAuth.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseAuth.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRApp.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRConfiguration.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLoggerLevel.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROptions.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRVersion.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/FirebaseCore/FirebaseCore-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRAppInternal.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRAppInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponent.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRComponent.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponentContainer.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRComponentContainer.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRComponentType.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRComponentType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRCoreDiagnosticsConnector.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRCoreDiagnosticsConnector.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDependency.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRDependency.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRHeartbeatInfo.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRHeartbeatInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLibrary.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRLibrary.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLogger.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROptionsInternal.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIROptionsInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCoreInternal.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCore/FirebaseCore/Sources/Private/FirebaseCoreInternal.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRCoreDiagnostics.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseCoreDiagnostics/Firebase/CoreDiagnostics/FIRCDLibrary/Public/FIRCoreDiagnostics.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCoreDiagnostics-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers/FirebaseCoreDiagnostics-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCoreDiagnostics-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCoreDiagnostics.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRDataEventType.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataEventType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDataSnapshot.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabase.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseQuery.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseReference.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseReference.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMutableData.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRMutableData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRServerValue.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRServerValue.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTransactionResult.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRTransactionResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/FirebaseDatabase/FirebaseDatabase-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FirebaseDatabase.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseFunctions/FirebaseFunctions.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRError.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseFunctions/Functions/FirebaseFunctions/Public/FirebaseFunctions/FIRError.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRFunctions.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseFunctions/Functions/FirebaseFunctions/Public/FirebaseFunctions/FIRFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRHTTPSCallable.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseFunctions/Functions/FirebaseFunctions/Public/FirebaseFunctions/FIRHTTPSCallable.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseFunctions-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseFunctions/FirebaseFunctions.framework/Headers/FirebaseFunctions-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseFunctions-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/FirebaseFunctions/FirebaseFunctions-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseFunctions.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseFunctions/Functions/FirebaseFunctions/Public/FirebaseFunctions/FirebaseFunctions.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseFunctions/FirebaseFunctions.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseFunctions.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRInstallations.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallations.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRInstallationsAuthTokenResult.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRInstallationsErrors.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseInstallations-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseInstallations-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/FirebaseInstallations/FirebaseInstallations-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseInstallations.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FirebaseInstallations.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherLogging.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherService.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionUploadFetcher.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GoogleDataTransport/GoogleDataTransport.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GDTCORClock.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORClock.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCORConsoleLogger.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORConsoleLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCOREndpoints.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREndpoints.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCOREvent.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREvent.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCOREventDataObject.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventDataObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCOREventTransformer.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventTransformer.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCORTargets.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTargets.h"
+        },
+        {
+          'type': 'file',
+          'name': "GDTCORTransport.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTransport.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleDataTransport-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GoogleDataTransport/GoogleDataTransport.framework/Headers/GoogleDataTransport-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleDataTransport-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/GoogleDataTransport/GoogleDataTransport-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleDataTransport.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleDataTransport/GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GoogleDataTransport.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GoogleDataTransport/GoogleDataTransport.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleDataTransport.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GULAppDelegateSwizzler.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULAppDelegateSwizzler.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULAppEnvironmentUtil.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULApplication.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULHeartbeatDateStorage.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorage.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULKeychainStorage.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainStorage.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULKeychainUtils.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULLogger.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULLoggerLevel.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULMutableDictionary.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULMutableDictionary.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNSData+zlib.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities/GULNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetwork.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetwork.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkConstants.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkLoggerProtocol.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkLoggerProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkMessageCode.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkMessageCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULNetworkURLSession.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkURLSession.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULOriginalIMPConvenienceMacros.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities/GULOriginalIMPConvenienceMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULReachabilityChecker.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Reachability/Public/GoogleUtilities/GULReachabilityChecker.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULSceneDelegateSwizzler.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULSceneDelegateSwizzler.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULSecureCoding.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULSecureCoding.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULSwizzler.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/MethodSwizzler/Public/GoogleUtilities/GULSwizzler.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULURLSessionDataResponse.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULURLSessionDataResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "GULUserDefaults.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleUtilities-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/Headers/GoogleUtilities-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleUtilities-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/GoogleUtilities/GoogleUtilities-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSURLSession+GULPromises.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/NSURLSession+GULPromises.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/GoogleUtilities/GoogleUtilities.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleUtilities.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/Pods_Parking_Finder.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Parking Finder-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/Pods-Parking Finder/Pods-Parking Finder-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Parking_Finder-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/Pods_Parking_Finder.framework/Headers/Pods_Parking_Finder-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/Pods_Parking_Finder.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-Parking Finder.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FBLPromises-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromises-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PromisesObjC-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/PromisesObjC/PromisesObjC-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/PromisesObjC.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "c.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/c.h"
+        },
+        {
+          'type': 'file',
+          'name': "cache.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/cache.h"
+        },
+        {
+          'type': 'file',
+          'name': "comparator.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/comparator.h"
+        },
+        {
+          'type': 'file',
+          'name': "db.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/db.h"
+        },
+        {
+          'type': 'file',
+          'name': "dumpfile.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/dumpfile.h"
+        },
+        {
+          'type': 'file',
+          'name': "env.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/env.h"
+        },
+        {
+          'type': 'file',
+          'name': "export.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/export.h"
+        },
+        {
+          'type': 'file',
+          'name': "filter_policy.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/filter_policy.h"
+        },
+        {
+          'type': 'file',
+          'name': "iterator.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/iterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-library-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/leveldb-library/leveldb-library-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "options.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/options.h"
+        },
+        {
+          'type': 'file',
+          'name': "slice.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/slice.h"
+        },
+        {
+          'type': 'file',
+          'name': "status.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/status.h"
+        },
+        {
+          'type': 'file',
+          'name': "table.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/table.h"
+        },
+        {
+          'type': 'file',
+          'name': "table_builder.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/table_builder.h"
+        },
+        {
+          'type': 'file',
+          'name': "write_batch.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/leveldb-library/include/leveldb/write_batch.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/leveldb-library.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "nanopb-Swift.h",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "nanopb-umbrella.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/Target Support Files/nanopb/nanopb-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/nanopb/pb.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_common.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/nanopb/pb_common.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_decode.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/nanopb/pb_decode.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_encode.h",
+          'external-contents': "/Users/designsbylagb/Desktop/installation md/Parking-Finder-Wayne-State-main/Pods/nanopb/pb_encode.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/designsbylagb/Desktop/CSC4111/Parking Finder/Parking_Finder-chrnevecckaugsalblqaxkodzlhx/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

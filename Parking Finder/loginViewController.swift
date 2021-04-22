@@ -4,10 +4,10 @@
 //
 //  Created by Server on 2/15/21.
 //
-
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import Foundation
 
 class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
@@ -17,7 +17,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     @IBOutlet weak var userNameLoginField: UITextField!
     @IBOutlet weak var userPasswordLoginField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    
     
     override func viewDidLoad()
     {
@@ -35,7 +34,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         loginButton.isEnabled = false
         handleTextField()
     }
-
     
     func handleTextField()
     {
@@ -57,7 +55,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         loginButton.isEnabled = true
     }
     
-    
     @IBAction func loginButton(_ sender: Any)
     {
         AuthService.signIn(email: userNameLoginField.text!, password: userPasswordLoginField.text!, onSuccess: {
@@ -68,9 +65,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
                 print(error!)
         })
     
-        
-        
-        
         /* once tapped naviagate to home page-----------------------------------------------------
         guard let vc = storyboard?.instantiateViewController(identifier: "home_vc") as? homeViewController
         else
@@ -88,20 +82,9 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         */
     }
     
-    
-    
-    
     @IBAction func noAccountButton(_ sender: Any)
-    {
-        
-        
-    }
-    
-    
-    
-    
-    
-    
+    {}
+
     //keyboard methods for fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {

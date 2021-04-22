@@ -4,11 +4,11 @@
 //
 //  Created by Server on 2/7/21.
 //
-
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 import MapKit
+import Foundation
 
 class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
@@ -32,8 +32,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         homeButton.layer.shadowRadius = 1.0
         homeButton.layer.shadowOpacity = 1.5
     }
-    
-    
+
     // Auto login if user forgets to log out
     /*override func viewDidAppear(_ animated: Bool)
     {
@@ -44,9 +43,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
             self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
         }
     }*/
-    
 
-    
     // Eli's Code to log users out
     @IBAction func logOut_Button(_ sender: Any)
     {
@@ -66,21 +63,16 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         print("No Current User Signed in")
     }
     
-    
     @IBAction func homeButton(_ sender: Any)
-    {
-        
-    }
-    
+    {}
 
-    @IBAction func parkedButtonTapped(_ sender: Any) {
+    @IBAction func parkedButtonTapped(_ sender: Any)
+    {
         print("parked button tapped!")
         let ref = Database.database().reference()
         let usersReference = ref.child("users")
-    
         
         let userRef = usersReference.child(Auth.auth().currentUser!.uid)
-        
         
         let uid :String = (Auth.auth().currentUser?.uid)!
         print("Current user ID is: " + uid)
@@ -93,7 +85,6 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         let tapButton : UIButton = sender as! UIButton
             tapButton.isHidden = true;
     }
-    
     
     // Func Handle textfields Home Page
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
@@ -110,10 +101,6 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         
         return allowedCharacterSet.isSuperset(of: typedCharacterSet) && newString.length <= maxLength
     }
-
-    
-    
-    
     
     //keyboard methods for fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
@@ -121,6 +108,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         hidekeyboardHome()
         return true
     }
+    
     // Func hideKeyboard
     func hidekeyboardHome()
     {
@@ -128,11 +116,7 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         userParkedZoneField.resignFirstResponder()
         userParkedETimeField.resignFirstResponder()
     }
-
-    
 }
-
-
 
 
 class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
@@ -145,7 +129,6 @@ class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         mapView.delegate = self
         setZoomLevel(location: locationLatLong)
         self.placePins()
-
     }
     
     // Configure map starting coorndinates
@@ -164,7 +147,6 @@ class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         var lattitude: CLLocationDegrees
         var longtitude: CLLocationDegrees
     }
-
     
     func placePins()
     {
@@ -195,8 +177,6 @@ class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManag
             mapView.addAnnotation(annotation)
         }
     }
-    
-
     
 func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?//(MKAnnotationView?, MKMarkerAnnotationView)
 {
@@ -241,7 +221,6 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
         extendedBtn.addTarget(self, action:#selector(self.isExtendedClicked), for: .touchUpInside)
         
        annoView!.annoViewDesign(arrangedSubviews: [emptyBtn, fullBtn, extendedBtn])              // three added info buttons
-       
     }
     else
     {
@@ -250,7 +229,6 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
     //annoView = annotationView                 // returns color not buttons
     return annoView
 }
-    
 
     @objc func isEmptyClicked()
     {
@@ -264,6 +242,7 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
     @objc func isFullClicked()
     {
         print("isFull Clicked")
+        
     }
     
     @objc func isExtendedClicked()
