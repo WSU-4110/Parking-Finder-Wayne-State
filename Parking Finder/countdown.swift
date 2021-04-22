@@ -24,21 +24,14 @@ class countDown: UIViewController
         runTimer()
     }
     
-    func runTimer()
-    {
-        timer = Timer.scheduleTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
-    }
-    
     func updateTimer()
     {
         seconds -= 1
-        timerLabel.text = timeString(time: TimeIntervel(seconds))
     }
     @IBAction func pauseButtonTapped(_ sender: UIButton)
     {
         if self.resumeTapped == false
         {
-            timer.invaliddata()
             self.resumeTapped = false
         }
         else
@@ -48,9 +41,7 @@ class countDown: UIViewController
         }
         @IBACtion func resetButtonTapped(_ sender: UIButton)
         {
-            timer.invaliddata()
             seconds = 60
-            timerLabel.text = timeString(time : TimeIntervel(seconds))
             isTimerRunning = false
         }
         
@@ -62,7 +53,6 @@ class countDown: UIViewController
             else
             {
                 seconds -= 1
-                timerLabel.text = timeString(time: TimeInterval(seconds))
             }
         }
         func timeSTring(time:TimeInterval) -> String
@@ -71,10 +61,6 @@ class countDown: UIViewController
             let minute = Int(time) / 60 % 60
             let seconds = Int(time) % 60
             return String (format:"%02i:%02i:%02i", hours, minutes, seconds)
-        }
-        override func viewDidLoad()
-        {
-            super.viewDidLoad()
         }
     }
 }
