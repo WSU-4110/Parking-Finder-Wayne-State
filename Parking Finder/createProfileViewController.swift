@@ -29,7 +29,6 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
         createUserButton.layer.shadowOffset = CGSize(width: 2, height: 3)
         createUserButton.layer.shadowRadius = 1.0
         createUserButton.layer.shadowOpacity = 1.5
-
     }
 
     @IBAction func createUserButton(_ sender: Any)
@@ -81,7 +80,6 @@ class createProfileViewController: UIViewController, UITableViewDelegate, UIText
     }*/
     // (Trevor) I think this is done in this class? The addToDatabase function will be called by Fahim to update the database when the user submits their new profile 
     // information, passing the user's form inputs in the argument
-
 
     //keyboard methods for fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool

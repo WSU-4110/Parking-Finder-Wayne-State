@@ -5,12 +5,12 @@
 //  Created by Salem Baraka on 4/21/21.
 //code to create a ui timer, need to be conencted to database working on it
 
-import Foundation
+/*import Foundation
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class countDown: UIViewController
+class countDown: UIViewController       // FR5 couldn't get to work
 {
     @IBOutlet weak var timeLabel: UILabel!
     
@@ -78,3 +78,4 @@ class countDown: UIViewController
         }
     }
 }
+*/

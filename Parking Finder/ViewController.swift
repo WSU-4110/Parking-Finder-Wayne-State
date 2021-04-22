@@ -12,8 +12,6 @@ import Foundation
 
 class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
-
-    
     // Outlets for text fields and button
     @IBOutlet weak var userParkedZoneField: UITextField!
     @IBOutlet weak var userParkedETimeField: UITextField!
@@ -25,24 +23,12 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         userParkedZoneField.delegate = self
         userParkedETimeField.delegate = self
         
-        
         // shadow for park button
         homeButton.layer.shadowColor = UIColor.black.cgColor
         homeButton.layer.shadowOffset = CGSize(width: 2, height: 3)
         homeButton.layer.shadowRadius = 1.0
         homeButton.layer.shadowOpacity = 1.5
     }
-
-    // Auto login if user forgets to log out
-    /*override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil
-        {
-            //print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
-            self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)
-        }
-    }*/
 
     // Eli's Code to log users out
     @IBAction func logOut_Button(_ sender: Any)
@@ -155,82 +141,50 @@ class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                                  ParkingZone(name: "2", lattitude: 42.35689, longtitude: -83.06472222),
                                  ParkingZone(name: "3", lattitude: 42.35670, longtitude: -83.06530),
                                  ParkingZone(name: "4", lattitude: 42.35635, longtitude: -83.06611111),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35605, longtitude: -83.06694444),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35577, longtitude: -83.06777778),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35559, longtitude: -83.06833333),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35525, longtitude: -83.06944444),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35515, longtitude: -83.06972222),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35490, longtitude: -83.07055556),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35455, longtitude: -83.07166667),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778),
-                                 
-                                 ParkingZone(name: "\"207\"", lattitude: 42.35445, longtitude: -83.06580),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35390, longtitude: -83.06555556),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778),
-                                  
-                                  
-            //more location and pins by fahim             
-                                  
-            ParkingZone(name: "\"206\"", lattitude: 42.356804620064196, longtitude: -83.06415562908188),
-             
-            ParkingZone(name: "\"206\"", lattitude: 42.356891830402986, longtitude: -83.06387667934433),
-             
-            ParkingZone(name: "\"206\"", lattitude: 42.356961202177004, longtitude: -83.06361114065186),
-             
-            ParkingZone(name: "\"206\"", lattitude: 42.357034537969085, longtitude: -83.06335096637741),
-             
-            ParkingZone(name: "\"206\"", lattitude:  42.357163370910115, longtitude: -83.06303983013169),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35734922962929, longtitude: -83.0625736622988),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35750871304528, longtitude: -83.06217544951403),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35776448592051, longtitude: -83.06159609236681),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35794440031079, longtitude: -83.06117333331446),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.358186765813464, longtitude: -83.06070281179706),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.358186765813464, longtitude: -83.06070281179706),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35835422570779, longtitude: -83.06084817521543),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.3565933374783, longtitude: -83.06478840687288),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35648630608267, longtitude: -83.0651156363727),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.356239443400014, longtitude: -83.06567695299543),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35610268025863, longtitude: -83.06603905121244),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.35592956086741, longtitude: -83.06645057687177),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35389678824058, longtitude: -83.07285762845464),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35400778833208, longtitude: -83.07250491796918),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.35412869892297, longtitude: -83.07214281975217),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.35426744849474, longtitude: -83.07172171293684),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.35437814818244, longtitude: -83.07132029096391),
-            
-            ParkingZone(name: "\"206\"", lattitude:  42.354549701049955, longtitude: -83.07078469319742),
-                   
-            ParkingZone(name: "\"206\"", lattitude:  42.354724127865055, longtitude: -83.07021606488627),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.3548779644611, longtitude: -83.06971178529778),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.35505338642431, longtitude: -83.06914353404568),
-
-            ParkingZone(name: "\"206\"", lattitude:  42.355330964664084, longtitude: -83.06824150423768)
-
+                                 ParkingZone(name: "5", lattitude: 42.35605, longtitude: -83.06694444),
+                                 ParkingZone(name: "6", lattitude: 42.35577, longtitude: -83.06777778),
+                                 ParkingZone(name: "7", lattitude: 42.35559, longtitude: -83.06833333),
+                                 ParkingZone(name: "8", lattitude: 42.35525, longtitude: -83.06944444),
+                                 ParkingZone(name: "9", lattitude: 42.35515, longtitude: -83.06972222),
+                                 ParkingZone(name: "10", lattitude: 42.35490, longtitude: -83.07055556),
+                                 ParkingZone(name: "11", lattitude: 42.35455, longtitude: -83.07166667),
+                                 ParkingZone(name: "12", lattitude: 42.35420, longtitude: -83.07277778),
+                                 ParkingZone(name: "13", lattitude: 42.35445, longtitude: -83.06580),
+                                 ParkingZone(name: "14", lattitude: 42.35390, longtitude: -83.06555556),
+                                 ParkingZone(name: "15", lattitude: 42.35420, longtitude: -83.07277778),
+            ParkingZone(name: "16", lattitude: 42.356804620064196, longtitude: -83.06415562908188),            //more locations and pins by fahim
+            ParkingZone(name: "17", lattitude: 42.356891830402986, longtitude: -83.06387667934433),
+            ParkingZone(name: "18", lattitude: 42.356961202177004, longtitude: -83.06361114065186),
+            ParkingZone(name: "19", lattitude: 42.357034537969085, longtitude: -83.06335096637741),
+            ParkingZone(name: "20", lattitude:  42.357163370910115, longtitude: -83.06303983013169),
+            ParkingZone(name: "21", lattitude:  42.35734922962929, longtitude: -83.0625736622988),
+            ParkingZone(name: "22", lattitude:  42.35750871304528, longtitude: -83.06217544951403),
+            ParkingZone(name: "23", lattitude:  42.35776448592051, longtitude: -83.06159609236681),
+            ParkingZone(name: "24", lattitude:  42.35794440031079, longtitude: -83.06117333331446),
+            ParkingZone(name: "25", lattitude:  42.358186765813464, longtitude: -83.06070281179706),
+            ParkingZone(name: "26", lattitude:  42.358186765813464, longtitude: -83.06070281179706),
+            ParkingZone(name: "27", lattitude:  42.35835422570779, longtitude: -83.06084817521543),
+            ParkingZone(name: "28", lattitude:  42.3565933374783, longtitude: -83.06478840687288),
+            ParkingZone(name: "29", lattitude:  42.35648630608267, longtitude: -83.0651156363727),
+            ParkingZone(name: "30", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
+            ParkingZone(name: "31", lattitude:  42.356239443400014, longtitude: -83.06567695299543),
+            ParkingZone(name: "32", lattitude:  42.35610268025863, longtitude: -83.06603905121244),
+            ParkingZone(name: "33", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
+            ParkingZone(name: "34", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
+            ParkingZone(name: "35", lattitude:  42.35592956086741, longtitude: -83.06645057687177),
+            ParkingZone(name: "36", lattitude:  42.35389678824058, longtitude: -83.07285762845464),
+            ParkingZone(name: "37", lattitude:  42.35400778833208, longtitude: -83.07250491796918),
+            ParkingZone(name: "38", lattitude:  42.35412869892297, longtitude: -83.07214281975217),
+            ParkingZone(name: "39", lattitude:  42.35426744849474, longtitude: -83.07172171293684),
+            ParkingZone(name: "40", lattitude:  42.35437814818244, longtitude: -83.07132029096391),
+            ParkingZone(name: "41", lattitude:  42.354549701049955, longtitude: -83.07078469319742),
+            ParkingZone(name: "42", lattitude:  42.354724127865055, longtitude: -83.07021606488627),
+            ParkingZone(name: "43", lattitude:  42.3548779644611, longtitude: -83.06971178529778),
+            ParkingZone(name: "45", lattitude:  42.35505338642431, longtitude: -83.06914353404568),
+            ParkingZone(name: "47", lattitude:  42.362017, longtitude: -83.070072),
+            ParkingZone(name: "48", lattitude:  42.361119, longtitude: -83.067252),
+            ParkingZone(name: "49", lattitude:  42.353983, longtitude: -83.062326),
+            ParkingZone(name: "50", lattitude:  42.351096, longtitude: -83.063837)
         ]
         // add each annotation parking zone with its info
         for ParkingZone in wayneParkingZonesC
@@ -250,7 +204,7 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
     
     //let annotationIdentifierr = "pin"
     let annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
-    annotationView.markerTintColor = .blue
+    annotationView.markerTintColor = .blue  // default
     
     if annoView == nil
     {
@@ -269,7 +223,7 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
         // isFull button
         let fullBtn = UIButton(type: .detailDisclosure)
         fullBtn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        fullBtn.backgroundColor = UIColor.red
+        fullBtn.backgroundColor = UIColor.gray
         fullBtn.layer.borderColor = UIColor.darkGray.cgColor
         fullBtn.layer.cornerRadius = 5
         fullBtn.layer.masksToBounds = true
@@ -284,13 +238,13 @@ func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnota
         extendedBtn.layer.masksToBounds = true
         extendedBtn.addTarget(self, action:#selector(self.isExtendedClicked), for: .touchUpInside)
         
-       annoView!.annoViewDesign(arrangedSubviews: [emptyBtn, fullBtn, extendedBtn])              // three added info buttons
-    }
-    else
-    {
-        annoView?.annotation = annotation
-    }
-    //annoView = annotationView                 // returns color not buttons
+        annoView!.annoViewDesign(arrangedSubviews: [emptyBtn, fullBtn, extendedBtn])              // three added info buttons
+     }
+     else
+     {
+         annoView?.annotation = annotation
+     }
+     //annoView = annotationView                 // returns color not buttons
     return annoView
 }
 
