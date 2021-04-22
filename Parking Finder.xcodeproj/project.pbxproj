@@ -11,6 +11,7 @@
 		530C119C25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		530C119D25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
 		530C119E25D1C3F800E762C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */; };
+		5313B13B26323C39000035BB /* signUpUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313B13A26323C39000035BB /* signUpUsers.swift */; };
 		531CEEF825DB29A1008CE498 /* createProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CEEF725DB29A1008CE498 /* createProfileViewController.swift */; };
 		531CEEFA25DB2EFE008CE498 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CEEF925DB2EFE008CE498 /* loginViewController.swift */; };
 		53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D6F25D083350048FDE3 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		530A7C6C25FA8C8500977084 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5313B13A26323C39000035BB /* signUpUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpUsers.swift; sourceTree = "<group>"; };
 		531CEEF725DB29A1008CE498 /* createProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createProfileViewController.swift; sourceTree = "<group>"; };
 		531CEEF925DB2EFE008CE498 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		53717D6C25D083350048FDE3 /* Parking Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5313B13826323BA0000035BB /* signUp */ = {
+			isa = PBXGroup;
+			children = (
+				5313B13A26323C39000035BB /* signUpUsers.swift */,
+			);
+			path = signUp;
+			sourceTree = "<group>";
+		};
+		5313B13926323BB6000035BB /* signIn */ = {
+			isa = PBXGroup;
+			children = (
+				530A7C6C25FA8C8500977084 /* AuthService.swift */,
+			);
+			path = signIn;
+			sourceTree = "<group>";
+		};
 		53717D6325D083350048FDE3 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +155,9 @@
 		53717D6E25D083350048FDE3 /* Parking Finder */ = {
 			isa = PBXGroup;
 			children = (
+				5313B13926323BB6000035BB /* signIn */,
+				5313B13826323BA0000035BB /* signUp */,
 				53717D6F25D083350048FDE3 /* AppDelegate.swift */,
-				530A7C6C25FA8C8500977084 /* AuthService.swift */,
 				53717D7125D083350048FDE3 /* SceneDelegate.swift */,
 				53717D7325D083350048FDE3 /* ViewController.swift */,
 				531CEEF725DB29A1008CE498 /* createProfileViewController.swift */,
@@ -353,6 +372,7 @@
 				53717D7425D083350048FDE3 /* ViewController.swift in Sources */,
 				69E415C6262F6818007D22EF /* resetPasswordViewController.swift in Sources */,
 				AEB70F9A2630BC7400818537 /* countdown.swift in Sources */,
+				5313B13B26323C39000035BB /* signUpUsers.swift in Sources */,
 				53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */,
 				530A7C6D25FA8C8500977084 /* AuthService.swift in Sources */,
 				53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */,

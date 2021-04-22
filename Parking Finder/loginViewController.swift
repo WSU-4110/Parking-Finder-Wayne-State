@@ -69,22 +69,6 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
             { error in
                 print(error!)
         })
-    
-        /* once tapped naviagate to home page-----------------------------------------------------
-        guard let vc = storyboard?.instantiateViewController(identifier: "home_vc") as? homeViewController
-        else
-        {
-            return
-        }
-        present(vc, animated: true)
-        //-----------------------------------------------------------------------------------------
-        
-        
-        // Login Profile Button is hidden when tapped--------------------------------------------
-        let tapButton : UIButton = sender as! UIButton
-            tapButton.isHidden = true;
-         test lmao
-        */
     }
     
     @IBAction func noAccountButton(_ sender: Any)

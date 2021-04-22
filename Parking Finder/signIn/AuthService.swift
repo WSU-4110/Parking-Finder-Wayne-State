@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseDatabase
 import FirebaseAuth
 
 class AuthService
