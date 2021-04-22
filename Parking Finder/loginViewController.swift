@@ -11,7 +11,6 @@ import Foundation
 
 class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDelegate
 {
-
     private let database = Database.database().reference()
     
     @IBOutlet weak var userNameLoginField: UITextField!
@@ -29,10 +28,16 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
         loginButton.layer.shadowOffset = CGSize(width: 2, height: 3)
         loginButton.layer.shadowRadius = 1.0
         loginButton.layer.shadowOpacity = 1.5
-        
-        
         loginButton.isEnabled = false
         handleTextField()
+
+        // Eli code Auto Login 
+        if Auth.auth().currentUser != nil
+        {
+           print("Current User: \(Auth.auth().currentUser!)") // print firebase current user
+           Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: {(timer) in
+           self.performSegue(withIdentifier: "loginToTabBarVC", sender: nil)})
+        }
     }
     
     func handleTextField()
@@ -84,7 +89,7 @@ class loginViewController: UIViewController, UITableViewDelegate, UITextFieldDel
     
     @IBAction func noAccountButton(_ sender: Any)
     {}
-
+    
     //keyboard methods for fields
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {

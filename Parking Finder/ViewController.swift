@@ -166,7 +166,71 @@ class finderViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                                  
                                  ParkingZone(name: "\"207\"", lattitude: 42.35445, longtitude: -83.06580),
                                  ParkingZone(name: "\"206\"", lattitude: 42.35390, longtitude: -83.06555556),
-                                 ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778)
+                                 ParkingZone(name: "\"206\"", lattitude: 42.35420, longtitude: -83.07277778),
+                                  
+                                  
+            //more location and pins by fahim             
+                                  
+            ParkingZone(name: "\"206\"", lattitude: 42.356804620064196, longtitude: -83.06415562908188),
+             
+            ParkingZone(name: "\"206\"", lattitude: 42.356891830402986, longtitude: -83.06387667934433),
+             
+            ParkingZone(name: "\"206\"", lattitude: 42.356961202177004, longtitude: -83.06361114065186),
+             
+            ParkingZone(name: "\"206\"", lattitude: 42.357034537969085, longtitude: -83.06335096637741),
+             
+            ParkingZone(name: "\"206\"", lattitude:  42.357163370910115, longtitude: -83.06303983013169),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35734922962929, longtitude: -83.0625736622988),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35750871304528, longtitude: -83.06217544951403),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35776448592051, longtitude: -83.06159609236681),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35794440031079, longtitude: -83.06117333331446),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.358186765813464, longtitude: -83.06070281179706),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.358186765813464, longtitude: -83.06070281179706),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35835422570779, longtitude: -83.06084817521543),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.3565933374783, longtitude: -83.06478840687288),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35648630608267, longtitude: -83.0651156363727),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.356239443400014, longtitude: -83.06567695299543),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35610268025863, longtitude: -83.06603905121244),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.35634756140963, longtitude: -83.06542409040941),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.35592956086741, longtitude: -83.06645057687177),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35389678824058, longtitude: -83.07285762845464),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35400778833208, longtitude: -83.07250491796918),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.35412869892297, longtitude: -83.07214281975217),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.35426744849474, longtitude: -83.07172171293684),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.35437814818244, longtitude: -83.07132029096391),
+            
+            ParkingZone(name: "\"206\"", lattitude:  42.354549701049955, longtitude: -83.07078469319742),
+                   
+            ParkingZone(name: "\"206\"", lattitude:  42.354724127865055, longtitude: -83.07021606488627),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.3548779644611, longtitude: -83.06971178529778),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.35505338642431, longtitude: -83.06914353404568),
+
+            ParkingZone(name: "\"206\"", lattitude:  42.355330964664084, longtitude: -83.06824150423768)
+
         ]
         // add each annotation parking zone with its info
         for ParkingZone in wayneParkingZonesC

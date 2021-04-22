@@ -22,6 +22,8 @@
 		53717D8A25D083380048FDE3 /* Parking_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D8925D083380048FDE3 /* Parking_FinderTests.swift */; };
 		53717D9525D083380048FDE3 /* Parking_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53717D9425D083380048FDE3 /* Parking_FinderUITests.swift */; };
 		675B3ED9E6D139EE8E338529 /* Pods_Parking_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F00D44B1E3FDB149050BD85 /* Pods_Parking_Finder.framework */; };
+		69E415C6262F6818007D22EF /* resetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E415C5262F6818007D22EF /* resetPasswordViewController.swift */; };
+		AEB70F9A2630BC7400818537 /* countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB70F992630BC7400818537 /* countdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		53717D9625D083380048FDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D46454C86777563C1933A3A /* Pods-Parking Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder.release.xcconfig"; path = "Target Support Files/Pods-Parking Finder/Pods-Parking Finder.release.xcconfig"; sourceTree = "<group>"; };
 		603B408D958A944F69022EEB /* Pods-Parking Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Finder.debug.xcconfig"; path = "Target Support Files/Pods-Parking Finder/Pods-Parking Finder.debug.xcconfig"; sourceTree = "<group>"; };
+		69E415C5262F6818007D22EF /* resetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetPasswordViewController.swift; sourceTree = "<group>"; };
+		AEB70F992630BC7400818537 /* countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				53717D7D25D083370048FDE3 /* LaunchScreen.storyboard */,
 				530C119B25D1C3F800E762C8 /* GoogleService-Info.plist */,
 				53717D8025D083370048FDE3 /* Info.plist */,
+				69E415C5262F6818007D22EF /* resetPasswordViewController.swift */,
+				AEB70F992630BC7400818537 /* countdown.swift */,
 			);
 			path = "Parking Finder";
 			sourceTree = "<group>";
@@ -345,6 +351,8 @@
 			files = (
 				531CEEF825DB29A1008CE498 /* createProfileViewController.swift in Sources */,
 				53717D7425D083350048FDE3 /* ViewController.swift in Sources */,
+				69E415C6262F6818007D22EF /* resetPasswordViewController.swift in Sources */,
+				AEB70F9A2630BC7400818537 /* countdown.swift in Sources */,
 				53717D7025D083350048FDE3 /* AppDelegate.swift in Sources */,
 				530A7C6D25FA8C8500977084 /* AuthService.swift in Sources */,
 				53717D7225D083350048FDE3 /* SceneDelegate.swift in Sources */,
