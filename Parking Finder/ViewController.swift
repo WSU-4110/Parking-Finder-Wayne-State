@@ -30,7 +30,8 @@ class homeViewController: UIViewController, UITableViewDelegate, UITextFieldDele
         homeButton.layer.shadowOpacity = 1.5
     }
 
-    // Eli's Code to log users out
+    // Handles the user logout button
+    // Code written by Eli
     @IBAction func logOut_Button(_ sender: Any)
     {
         do

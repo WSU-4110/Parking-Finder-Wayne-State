@@ -9,7 +9,7 @@ import Foundation
 import FirebaseDatabase
 import FirebaseAuth
 
-// singleton design pattern
+// Singleton design pattern
 class signInUsers
 {
     
@@ -19,7 +19,7 @@ class signInUsers
     
     public func signIn(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void)
     {
-        print("signin")
+        print("signin") // console log for debugging in xcode
         Auth.auth().signIn(withEmail: email, password: password) { (user: AuthDataResult?, error: Error?) in
             if error != nil
             {
@@ -27,10 +27,10 @@ class signInUsers
                 return
             }
             onSuccess()
-            print("login button tapped!")
+            print("login button tapped!") // console log for debugging in xcode
             let uid :String = (Auth.auth().currentUser?.uid)!
             print("Current user ID is: " + uid)
-            print("current User Email is: ", user?.user.email! as Any)            // print console user's email
+            print("current User Email is: ", user?.user.email! as Any) // print user's email to developer console for debugging
         }
     }
 
